@@ -1,4 +1,4 @@
-# SFTP 지원 서버 생성
+# SFTP 지원 서버 생성 및 파일 전송
 
 ## 사전 작업
 [IAM, S3 Bucket, SSH Key Pair 생성](https://github.com/kva231/AWS-Tech-Note/blob/master/Migration%20%26%20Transfer/AWS%20Transfer%20Family/%EC%82%AC%EC%A0%84%20%EC%9E%91%EC%97%85.md)
