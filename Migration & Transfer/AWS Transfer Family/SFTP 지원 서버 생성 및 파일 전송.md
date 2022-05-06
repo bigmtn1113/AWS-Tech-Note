@@ -5,7 +5,7 @@
 - 자격 증명 공급자 　- **Service Managed**  
 - 엔드포인트 유형 　 - **공개적으로 액세스 가능**  
 - 도메인 　　　 　　 - **Amazon S3**  
-- 사용자 인증 방식　 - **SSH Key Pair를 이용한 접근**  
+- 사용자 인증 방식　 - **SSH Key Pair**  
 
 <hr>
 
