@@ -47,4 +47,3 @@
     ```
 10. ACM에서 업로드된 인증서 확인
     ![Cap 2022-05-06 22-11-33-830](https://user-images.githubusercontent.com/46125158/167138223-dc66cba8-1e40-472e-aec9-963ac72bc770.png)
-
