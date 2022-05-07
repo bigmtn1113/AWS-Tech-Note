@@ -1,5 +1,7 @@
 # SFTP 지원 서버 생성 및 파일 전송
 
+<br/>
+
 ## 사용 방식
 - 활성화 프로토콜 　 - **SFTP**  
 - 자격 증명 공급자 　- **Service Managed**  
@@ -36,3 +38,9 @@
 ![Cap 2022-05-05 17-46-42-987](https://user-images.githubusercontent.com/46125158/166904132-94948153-3114-43b2-8372-cd59bac7b58d.png)
 ![Cap 2022-05-05 17-50-19-737](https://user-images.githubusercontent.com/46125158/166904138-c7e71686-97d3-455f-89c0-2daf3a8ee2d4.png)
 
+<hr>
+
+## 참고
+- SFTP 지원 서버 생성 - https://docs.aws.amazon.com/ko_kr/transfer/latest/userguide/create-server-sftp.html
+- Amazon S3 서비스 관리 사용자 추가 - https://docs.aws.amazon.com/ko_kr/transfer/latest/userguide/service-managed-users.html#add-s3-user
+- FileZilla 사용 - https://docs.aws.amazon.com/ko_kr/transfer/latest/userguide/transfer-file.html#filezilla
