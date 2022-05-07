@@ -23,3 +23,8 @@
 <hr>
 
 ## FileZilla를 사용하여 파일 전송
+
+<hr>
+
+## 참고
+- **Transfer Family PW 인증 활성화** - https://aws.amazon.com/ko/blogs/storage/enable-password-authentication-for-aws-transfer-family-using-aws-secrets-manager-updated/
