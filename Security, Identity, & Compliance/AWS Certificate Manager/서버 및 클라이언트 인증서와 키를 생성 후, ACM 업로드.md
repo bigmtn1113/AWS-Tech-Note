@@ -51,4 +51,4 @@
 <hr>
 
 ## 참고
-- **AWS Documentation** - https://docs.aws.amazon.com/ko_kr/vpn/latest/clientvpn-admin/client-authentication.html#mutual
+- **클라이언트와 서버 상호 인증** - https://docs.aws.amazon.com/ko_kr/vpn/latest/clientvpn-admin/client-authentication.html#mutual
