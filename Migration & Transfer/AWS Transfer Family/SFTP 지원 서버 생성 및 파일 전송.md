@@ -41,6 +41,6 @@
 <hr>
 
 ## 참고
-- SFTP 지원 서버 생성 - https://docs.aws.amazon.com/ko_kr/transfer/latest/userguide/create-server-sftp.html
-- Amazon S3 서비스 관리 사용자 추가 - https://docs.aws.amazon.com/ko_kr/transfer/latest/userguide/service-managed-users.html#add-s3-user
-- FileZilla 사용 - https://docs.aws.amazon.com/ko_kr/transfer/latest/userguide/transfer-file.html#filezilla
+- **SFTP 지원 서버 생성** - https://docs.aws.amazon.com/ko_kr/transfer/latest/userguide/create-server-sftp.html
+- **S3 서비스 관리 사용자 추가** - https://docs.aws.amazon.com/ko_kr/transfer/latest/userguide/service-managed-users.html#add-s3-user
+- **FileZilla 사용** - https://docs.aws.amazon.com/ko_kr/transfer/latest/userguide/transfer-file.html#filezilla
