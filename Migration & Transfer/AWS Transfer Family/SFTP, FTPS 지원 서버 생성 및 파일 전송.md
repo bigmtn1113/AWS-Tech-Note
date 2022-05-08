@@ -77,12 +77,12 @@
 
 ## AWS Secrets Manager을 이용한 사용자 추가
 ![Cap 2022-05-08 18-03-36-070](https://user-images.githubusercontent.com/46125158/167289831-512f3c7d-5b17-4ca0-bfd3-051e4b15109e.png)
-![Cap 2022-05-08 18-07-48-080](https://user-images.githubusercontent.com/46125158/167289832-df2d41ce-bf5a-4b03-8120-9346d3ebf416.png)
+![Cap 2022-05-08 19-37-50-442](https://user-images.githubusercontent.com/46125158/167292487-6a17d30c-2544-405a-8b71-4253a79b4ee0.png)
 ![Cap 2022-05-08 18-09-17-433](https://user-images.githubusercontent.com/46125158/167289867-958de0f0-943f-4d40-9b78-dc0f10b70b30.png)
 ![Cap 2022-05-08 18-09-47-305](https://user-images.githubusercontent.com/46125158/167289909-9ab15913-b47d-4d38-9bb8-0bbe39e3ad4f.png)
 ![Cap 2022-05-08 18-10-57-521](https://user-images.githubusercontent.com/46125158/167290021-0a6475c8-63c4-4556-9f3a-16fcaef4cd1b.png)
 ![Cap 2022-05-08 18-11-21-586](https://user-images.githubusercontent.com/46125158/167290123-3acfdc94-fb60-4a15-8058-afaad6ea0914.png)
-![Cap 2022-05-08 18-12-35-245](https://user-images.githubusercontent.com/46125158/167290090-86d72a2f-e0de-4af5-806a-2d6974ef1869.png)
+![Cap 2022-05-08 19-42-37-953](https://user-images.githubusercontent.com/46125158/167292494-030dc29a-a562-4734-be6b-ecbe0e6f936a.png)
 
 <hr>
 
@@ -97,7 +97,7 @@
   ![Cap 2022-05-08 19-18-28-431](https://user-images.githubusercontent.com/46125158/167291881-000326dd-9cd8-4c18-8661-05bf0e9dc8dd.png)
 
 - **결과**  
-  ![Cap 2022-05-08 18-36-13-946](https://user-images.githubusercontent.com/46125158/167290608-fcf5e892-cf70-474e-8a25-6f4e47770755.png)
+  ![Cap 2022-05-08 19-47-48-601](https://user-images.githubusercontent.com/46125158/167292659-de9a3973-6255-4f3f-aae0-ffed6e878d54.png)
 
 <hr>
 
