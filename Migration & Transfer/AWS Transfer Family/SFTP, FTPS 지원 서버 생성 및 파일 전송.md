@@ -17,7 +17,7 @@
 - [AWS CLI 설치](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 - [AWS SAM CLI 설치](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
 - VPC, Public Subnet, EIP 생성
-- Endpoint에 적용할 VPC default 보안 그룹 설정(SFTP, FTPS Ports)
+- Endpoint에 적용할 VPC default 보안 그룹 설정(SFTP, FTPS Ports)  
   ![Cap 2022-05-08 19-53-29-102](https://user-images.githubusercontent.com/46125158/167293042-5dd3f740-0a0d-4d7c-b1a0-87d909b2482d.png)
 
 <hr>
@@ -52,16 +52,19 @@
 (자동 생성하면 엔트포인트가 없고 EIP를 지정할 수도 없으므로 수동 생성으로 진행)
 
 4\. 패키지로 인해 생성된 대표 리소스 확인
-- **IAM**
+- **CloudFormation**  
+  ![Cap 2022-05-08 21-36-21-808](https://user-images.githubusercontent.com/46125158/167296492-db108329-79d4-4403-9178-1296e25ae50e.png)
+- **IAM**  
   ![image](https://user-images.githubusercontent.com/46125158/167287338-e7077c90-dd12-42f8-a0e9-83f2686204eb.png)
   ![image](https://user-images.githubusercontent.com/46125158/167287322-3b76ec12-8971-49b7-a3bc-b4bf70180cbf.png)
-- **API Gateway**
+- **API Gateway**  
   ![image](https://user-images.githubusercontent.com/46125158/167287393-87824ffc-b1d6-4bc1-8bd0-b484c7aaa039.png)
   ![image](https://user-images.githubusercontent.com/46125158/167287479-a9ef0307-57f0-4918-b7cd-7288eaf2f8cc.png)
   ![image1](https://user-images.githubusercontent.com/46125158/167287561-3b45f8cd-c596-407e-8b30-43745e4b5f43.png)
-- **Lambda**
+- **Lambda**  
   ![image](https://user-images.githubusercontent.com/46125158/167287594-dc437676-e4ab-45fb-81bf-d1d11fc436bf.png)
   ![image](https://user-images.githubusercontent.com/46125158/167287618-b590575d-9cb6-45cc-8e10-edc4a4a149ec.png)
+  ![Cap 2022-05-08 21-43-41-147](https://user-images.githubusercontent.com/46125158/167296721-4bdf23bd-c8fa-453f-9c38-875ff807fd34.png)
 
 <hr>
 
@@ -89,11 +92,11 @@
 <hr>
 
 ## FileZilla를 사용하여 파일 전송
-- **SSH Key Pair를 이용한 접근**(FTPS는 이용 불가. FTPS는 ID/PW로만 접근 가능)
+- **SSH Key Pair를 이용한 접근**(FTPS는 이용 불가. FTPS는 ID/PW로만 접근 가능)  
   ![Cap 2022-05-08 18-34-19-150](https://user-images.githubusercontent.com/46125158/167290419-e45e544d-3f54-4df0-9fbd-26e493194592.png)
   ![Cap 2022-05-08 18-45-41-181](https://user-images.githubusercontent.com/46125158/167290832-1f8d1df3-0f17-49fc-b04a-fd8c4e593258.png)
 
-- **ID/PW를 이용한 접근**
+- **ID/PW를 이용한 접근**  
   ![Cap 2022-05-08 18-34-19-150](https://user-images.githubusercontent.com/46125158/167290419-e45e544d-3f54-4df0-9fbd-26e493194592.png)
   ![Cap 2022-05-08 18-34-53-074](https://user-images.githubusercontent.com/46125158/167290599-319d7693-30db-4867-8078-c0ad68a0b396.png)
   ![Cap 2022-05-08 19-18-28-431](https://user-images.githubusercontent.com/46125158/167291881-000326dd-9cd8-4c18-8661-05bf0e9dc8dd.png)
