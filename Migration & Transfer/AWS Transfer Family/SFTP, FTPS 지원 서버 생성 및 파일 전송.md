@@ -1,5 +1,7 @@
 # SFTP, FTPS 지원 서버 생성 및 파일 전송
 
+<br/>
+
 ## 사용 방식
 - 활성화 프로토콜 　 - **SFTP, FTPS**  
 - 자격 증명 공급자 　- **Custom - Amazon API Gateway**  
@@ -11,6 +13,7 @@
 
 ## 사전 작업
 - [IAM, S3 Bucket, SSH Key Pair 생성](https://github.com/kva231/AWS-Tech-Note/blob/master/Migration%20%26%20Transfer/AWS%20Transfer%20Family/%EC%82%AC%EC%A0%84%20%EC%9E%91%EC%97%85.md)
+- [서버 및 클라이언트 인증서와 키를 생성 후, ACM 업로드](https://github.com/kva231/AWS-Tech-Note/blob/master/Security%2C%20Identity%2C%20%26%20Compliance/AWS%20Certificate%20Manager/%EC%84%9C%EB%B2%84%20%EB%B0%8F%20%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%20%EC%9D%B8%EC%A6%9D%EC%84%9C%EC%99%80%20%ED%82%A4%EB%A5%BC%20%EC%83%9D%EC%84%B1%20%ED%9B%84%2C%20ACM%20%EC%97%85%EB%A1%9C%EB%93%9C.md)
 - [AWS CLI 설치](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 - [AWS SAM CLI 설치](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
 - VPC, Puvlic Subnet, EIP 준비
@@ -61,6 +64,14 @@
 <hr>
 
 ## 서버 생성
+![Cap 2022-05-08 17-24-09-235](https://user-images.githubusercontent.com/46125158/167289083-080b267d-37ed-480f-ba5c-f64bebd275dd.png)
+![Cap 2022-05-08 17-25-06-798](https://user-images.githubusercontent.com/46125158/167289084-4a862f12-1a8d-43d7-89f2-7c0673ffbd38.png)
+![Cap 2022-05-08 17-30-48-048](https://user-images.githubusercontent.com/46125158/167289085-b18a11fb-77fb-4941-a5a3-304b88863018.png)
+![Cap 2022-05-08 17-31-57-355](https://user-images.githubusercontent.com/46125158/167289086-79567cad-d91b-48de-9b58-df994c31d304.png)
+![Cap 2022-05-08 17-32-17-806](https://user-images.githubusercontent.com/46125158/167289088-d524c483-d1c8-44a2-93ee-6e05c8504fea.png)
+![Cap 2022-05-08 17-32-32-011](https://user-images.githubusercontent.com/46125158/167289089-d7618328-e006-4a03-8046-e0644e541f0e.png)
+![Cap 2022-05-08 17-32-50-408](https://user-images.githubusercontent.com/46125158/167289091-17e43cb8-f214-44d1-876a-eff1daa96f43.png)
+![Cap 2022-05-08 17-41-16-738](https://user-images.githubusercontent.com/46125158/167289092-1ae84f5a-50ee-4ffa-bc45-4accc06543a2.png)
 
 <hr>
 
