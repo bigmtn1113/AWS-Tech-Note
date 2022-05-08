@@ -17,6 +17,8 @@
 - [AWS CLI 설치](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 - [AWS SAM CLI 설치](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
 - VPC, Public Subnet, EIP 생성
+- Endpoint에 적용할 VPC default 보안 그룹 설정(SFTP, FTPS Ports)
+  ![Cap 2022-05-08 19-53-29-102](https://user-images.githubusercontent.com/46125158/167293042-5dd3f740-0a0d-4d7c-b1a0-87d909b2482d.png)
 
 <hr>
 
