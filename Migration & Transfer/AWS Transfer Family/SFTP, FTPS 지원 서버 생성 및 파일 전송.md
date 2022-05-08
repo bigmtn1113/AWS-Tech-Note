@@ -69,7 +69,7 @@
 ![Cap 2022-05-08 17-24-09-235](https://user-images.githubusercontent.com/46125158/167289083-080b267d-37ed-480f-ba5c-f64bebd275dd.png)
 ![Cap 2022-05-08 17-25-06-798](https://user-images.githubusercontent.com/46125158/167289084-4a862f12-1a8d-43d7-89f2-7c0673ffbd38.png)
 ![Cap 2022-05-08 17-30-48-048](https://user-images.githubusercontent.com/46125158/167289085-b18a11fb-77fb-4941-a5a3-304b88863018.png)
-![Cap 2022-05-08 17-31-57-355](https://user-images.githubusercontent.com/46125158/167289086-79567cad-d91b-48de-9b58-df994c31d304.png)
+![Cap 2022-05-08 17-31-57-355](https://user-images.githubusercontent.com/46125158/167293453-bcc14a0c-a0e9-4584-a6bd-5107d4df0e36.png)
 ![Cap 2022-05-08 17-32-17-806](https://user-images.githubusercontent.com/46125158/167289088-d524c483-d1c8-44a2-93ee-6e05c8504fea.png)
 ![Cap 2022-05-08 17-32-32-011](https://user-images.githubusercontent.com/46125158/167289089-d7618328-e006-4a03-8046-e0644e541f0e.png)
 ![Cap 2022-05-08 17-32-50-408](https://user-images.githubusercontent.com/46125158/167289091-17e43cb8-f214-44d1-876a-eff1daa96f43.png)
