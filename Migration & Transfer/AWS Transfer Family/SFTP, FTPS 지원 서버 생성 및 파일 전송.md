@@ -107,5 +107,6 @@
 - **AWS CLI 설치** - https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 - **AWS SAM CLI 설치** - https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html
 - **Transfer Family PW 인증 활성화** - https://aws.amazon.com/ko/blogs/storage/enable-password-authentication-for-aws-transfer-family-using-aws-secrets-manager-updated/
+- **FTPS 지원 서버 생성** - https://docs.aws.amazon.com/transfer/latest/userguide/create-server-ftps.html
 - **Amazon API Gateway 사용하여 자격 증명 공급자 통합** - https://docs.aws.amazon.com/transfer/latest/userguide/custom-identity-provider-users.html#authentication-api-gateway
 - **FileZilla 사용** - https://docs.aws.amazon.com/transfer/latest/userguide/transfer-file.html#filezilla
