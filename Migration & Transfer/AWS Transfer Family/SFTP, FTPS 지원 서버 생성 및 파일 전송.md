@@ -16,7 +16,7 @@
 - [서버 및 클라이언트 인증서와 키를 생성 후, ACM 업로드](https://github.com/kva231/AWS-Tech-Note/blob/master/Security%2C%20Identity%2C%20%26%20Compliance/AWS%20Certificate%20Manager/%EC%84%9C%EB%B2%84%20%EB%B0%8F%20%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%20%EC%9D%B8%EC%A6%9D%EC%84%9C%EC%99%80%20%ED%82%A4%EB%A5%BC%20%EC%83%9D%EC%84%B1%20%ED%9B%84%2C%20ACM%20%EC%97%85%EB%A1%9C%EB%93%9C.md)
 - [AWS CLI 설치](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 - [AWS SAM CLI 설치](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
-- VPC, Puvlic Subnet, EIP 준비
+- VPC, Public Subnet, EIP 생성
 
 <hr>
 
@@ -75,7 +75,14 @@
 
 <hr>
 
-## Amazon S3 서비스 관리 사용자 추가
+## AWS Secrets Manager을 이용한 사용자 추가
+![Cap 2022-05-08 18-03-36-070](https://user-images.githubusercontent.com/46125158/167289831-512f3c7d-5b17-4ca0-bfd3-051e4b15109e.png)
+![Cap 2022-05-08 18-07-48-080](https://user-images.githubusercontent.com/46125158/167289832-df2d41ce-bf5a-4b03-8120-9346d3ebf416.png)
+![Cap 2022-05-08 18-09-17-433](https://user-images.githubusercontent.com/46125158/167289867-958de0f0-943f-4d40-9b78-dc0f10b70b30.png)
+![Cap 2022-05-08 18-09-47-305](https://user-images.githubusercontent.com/46125158/167289909-9ab15913-b47d-4d38-9bb8-0bbe39e3ad4f.png)
+![Cap 2022-05-08 18-10-57-521](https://user-images.githubusercontent.com/46125158/167290021-0a6475c8-63c4-4556-9f3a-16fcaef4cd1b.png)
+![Cap 2022-05-08 18-11-21-586](https://user-images.githubusercontent.com/46125158/167290123-3acfdc94-fb60-4a15-8058-afaad6ea0914.png)
+![Cap 2022-05-08 18-12-35-245](https://user-images.githubusercontent.com/46125158/167290090-86d72a2f-e0de-4af5-806a-2d6974ef1869.png)
 
 <hr>
 
