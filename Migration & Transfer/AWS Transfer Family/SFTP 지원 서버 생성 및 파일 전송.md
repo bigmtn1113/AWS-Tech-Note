@@ -11,6 +11,11 @@
 
 <hr>
 
+## Architecture 참고
+![trasfer-for-sftp-endpoint-types-202004-01](https://user-images.githubusercontent.com/46125158/167397449-ed8122df-47ea-402d-b0c9-d574dd0ead71.png)
+
+<hr>
+
 ## 사전 작업
 - [IAM, S3 Bucket, SSH Key Pair 생성](https://github.com/kva231/AWS-Tech-Note/blob/master/Migration%20%26%20Transfer/AWS%20Transfer%20Family/%EC%82%AC%EC%A0%84%20%EC%9E%91%EC%97%85.md)
 - Endpoint에 적용할 VPC default 보안 그룹 설정(SFTP Port)
@@ -43,6 +48,7 @@
 <hr>
 
 ## 참고
+- **Architecture** - https://dev.classmethod.jp/articles/trasfer-for-sftp-endpoint-types-202004/
 - **SFTP 지원 서버 생성** - https://docs.aws.amazon.com/ko_kr/transfer/latest/userguide/create-server-sftp.html
 - **S3 서비스 관리 사용자 추가** - https://docs.aws.amazon.com/ko_kr/transfer/latest/userguide/service-managed-users.html#add-s3-user
 - **FileZilla 사용** - https://docs.aws.amazon.com/ko_kr/transfer/latest/userguide/transfer-file.html#filezilla
