@@ -59,7 +59,7 @@
   ![image](https://user-images.githubusercontent.com/46125158/167287322-3b76ec12-8971-49b7-a3bc-b4bf70180cbf.png)
 - **API Gateway**  
   ![image](https://user-images.githubusercontent.com/46125158/167287393-87824ffc-b1d6-4bc1-8bd0-b484c7aaa039.png)
-  ![image](https://user-images.githubusercontent.com/46125158/167287479-a9ef0307-57f0-4918-b7cd-7288eaf2f8cc.png)
+  ![Cap 2022-05-09 17-17-23-663](https://user-images.githubusercontent.com/46125158/167393420-e4e80960-09ce-45b2-9e0f-a3aef0669aa7.png)
   ![image1](https://user-images.githubusercontent.com/46125158/167287561-3b45f8cd-c596-407e-8b30-43745e4b5f43.png)
 - **Lambda**  
   ![image](https://user-images.githubusercontent.com/46125158/167287594-dc437676-e4ab-45fb-81bf-d1d11fc436bf.png)
@@ -69,7 +69,7 @@
 <hr>
 
 ## 서버 생성
-![Cap 2022-05-08 17-24-09-235](https://user-images.githubusercontent.com/46125158/167289083-080b267d-37ed-480f-ba5c-f64bebd275dd.png)
+![Cap 2022-05-08 17-24-09-235](https://user-images.githubusercontent.com/46125158/167393691-f282a272-6b8d-4c78-887e-bf8b8a9d8610.png)
 ![Cap 2022-05-08 17-25-06-798](https://user-images.githubusercontent.com/46125158/167289084-4a862f12-1a8d-43d7-89f2-7c0673ffbd38.png)
 ![Cap 2022-05-08 17-30-48-048](https://user-images.githubusercontent.com/46125158/167289085-b18a11fb-77fb-4941-a5a3-304b88863018.png)
 ![Cap 2022-05-08 17-31-57-355](https://user-images.githubusercontent.com/46125158/167293453-bcc14a0c-a0e9-4584-a6bd-5107d4df0e36.png)
@@ -81,8 +81,8 @@
 <hr>
 
 ## AWS Secrets Manager을 이용한 사용자 추가
-![Cap 2022-05-08 18-03-36-070](https://user-images.githubusercontent.com/46125158/167289831-512f3c7d-5b17-4ca0-bfd3-051e4b15109e.png)
-![Cap 2022-05-08 19-37-50-442](https://user-images.githubusercontent.com/46125158/167292487-6a17d30c-2544-405a-8b71-4253a79b4ee0.png)
+![Cap 2022-05-08 18-03-36-070](https://user-images.githubusercontent.com/46125158/167394104-03836b37-572a-45ea-95de-f80c40ae8585.png)
+![Cap 2022-05-08 19-37-50-442](https://user-images.githubusercontent.com/46125158/167394235-f6923b84-7f8a-4da6-b0b6-d365ea7c036b.png)
 ![Cap 2022-05-08 18-09-17-433](https://user-images.githubusercontent.com/46125158/167289867-958de0f0-943f-4d40-9b78-dc0f10b70b30.png)
 ![Cap 2022-05-08 18-09-47-305](https://user-images.githubusercontent.com/46125158/167289909-9ab15913-b47d-4d38-9bb8-0bbe39e3ad4f.png)
 ![Cap 2022-05-08 18-10-57-521](https://user-images.githubusercontent.com/46125158/167290021-0a6475c8-63c4-4556-9f3a-16fcaef4cd1b.png)
@@ -92,12 +92,13 @@
 <hr>
 
 ## FileZilla를 사용하여 파일 전송
-- **SSH Key Pair를 이용한 접근**(FTPS는 이용 불가. FTPS는 ID/PW로만 접근 가능)  
+- **Endpoint or EIP**  
   ![Cap 2022-05-08 18-34-19-150](https://user-images.githubusercontent.com/46125158/167290419-e45e544d-3f54-4df0-9fbd-26e493194592.png)
+
+- **SSH Key Pair를 이용한 접근**(FTPS는 이용 불가. FTPS는 ID/PW로만 접근 가능)  
   ![Cap 2022-05-08 18-45-41-181](https://user-images.githubusercontent.com/46125158/167290832-1f8d1df3-0f17-49fc-b04a-fd8c4e593258.png)
 
 - **ID/PW를 이용한 접근**  
-  ![Cap 2022-05-08 18-34-19-150](https://user-images.githubusercontent.com/46125158/167290419-e45e544d-3f54-4df0-9fbd-26e493194592.png)
   ![Cap 2022-05-08 18-34-53-074](https://user-images.githubusercontent.com/46125158/167290599-319d7693-30db-4867-8078-c0ad68a0b396.png)
   ![Cap 2022-05-08 19-18-28-431](https://user-images.githubusercontent.com/46125158/167291881-000326dd-9cd8-4c18-8661-05bf0e9dc8dd.png)
 
