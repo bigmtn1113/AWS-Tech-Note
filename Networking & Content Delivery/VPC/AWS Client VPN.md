@@ -3,7 +3,7 @@
 <br/>
 
 ## Architecture 참고
-![그림]()
+![image](https://user-images.githubusercontent.com/46125158/167406551-715be56a-d0ff-443f-bc19-9813ebccd850.png)
 
 <hr>
 
