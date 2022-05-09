@@ -11,7 +11,7 @@
 
 <hr>
 
-## Architecture
+## Architecture 참고
 ![trasfer-for-sftp-endpoint-types-202004-05-960x664](https://user-images.githubusercontent.com/46125158/167396552-6561313c-0774-49b9-80c4-3610d544d5be.png)
 
 <hr>
