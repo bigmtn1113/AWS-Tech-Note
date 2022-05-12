@@ -1,4 +1,4 @@
-# AWS Client VPN
+# AWS Client VPN을 이용한 Private 리소스 접근
 
 <br/>
 
@@ -37,9 +37,19 @@
 
 <hr>
 
-## 보안 그룹 확인
-Client VPN 엔드포인트에 적용된 보안 그룹이 인터넷으로의 아웃바운드 트래픽을 허용해야 인터넷 접속이 가능함  
-![Cap 2022-05-12 21-56-14-288](https://user-images.githubusercontent.com/46125158/168079827-73210ae6-3c6c-4da4-8a41-50c66f7ca178.png)
+## Network interfaces 확인
+가용성을 위해 Associate한 subnet 당 약 2개의 ENI가 생성됨  
+![Cap 2022-05-12 22-31-45-839](https://user-images.githubusercontent.com/46125158/168087054-676afc42-b1b4-4f6f-bd88-5db366c843bc.png)
+
+<hr>
+
+## 보안 그룹 설정
+- Client VPN 엔드포인트에 적용된 보안 그룹이 인터넷으로의 아웃바운드 트래픽을 허용해야 인터넷 접속이 가능함  
+  ![Cap 2022-05-12 21-56-14-288](https://user-images.githubusercontent.com/46125158/168079827-73210ae6-3c6c-4da4-8a41-50c66f7ca178.png)
+
+- Private Subnet에 있는 EC2 인스턴스 보안 그룹 인바운드 설정
+  ![Cap 2022-05-12 22-37-07-005](https://user-images.githubusercontent.com/46125158/168088218-08eefd4d-8b21-4133-ba9d-f7a7ca795d8d.png)
+
 
 <hr>
 
