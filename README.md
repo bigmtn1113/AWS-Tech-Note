@@ -4,7 +4,7 @@
 
 ## Networking & Content Delivery
 ### ⭐ VPC
-- [AWS Client VPN](https://github.com/kva231/AWS-Tech-Note/blob/master/Networking%20%26%20Content%20Delivery/VPC/AWS%20Client%20VPN.md)
+- [AWS Client VPN을 이용한 Private 리소스 접근](https://github.com/kva231/AWS-Tech-Note/blob/master/Networking%20&%20Content%20Delivery/VPC/AWS%20Client%20VPN%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20Private%20%EB%A6%AC%EC%86%8C%EC%8A%A4%20%EC%A0%91%EA%B7%BC.md)
 
 <hr>
 
