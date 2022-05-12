@@ -13,9 +13,17 @@
 
 <hr>
 
-## 내용
+## Client VPN Endpoint 생성
+![Cap 2022-05-12 20-29-28-063](https://user-images.githubusercontent.com/46125158/168066709-2908e74f-ebfd-4e67-b8ea-57c5f5afcf1b.png)  
+![Cap 2022-05-12 20-32-07-979](https://user-images.githubusercontent.com/46125158/168068008-59cc4093-cd9a-4ab0-a509-76c75ada135c.png)
+
+<hr>
+
+## Client VPN Endpoint 설정
+
 
 <hr>
 
 ## 참고
-- **제목** - URL
+- **Client VPN 시작하기** - https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-getting-started.html
+- **Split-tunnel** - https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/split-tunnel-vpn.html
