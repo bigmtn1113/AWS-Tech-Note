@@ -35,9 +35,17 @@
   ![Cap 2022-05-12 21-21-24-096](https://user-images.githubusercontent.com/46125158/168075666-4c6e79b2-a563-4417-a82f-7b0e1c4a20e2.png)  
   ![Cap 2022-05-12 21-22-33-519](https://user-images.githubusercontent.com/46125158/168075773-af68c11d-35cd-452d-ab17-6813f17d3b10.png)
 
+<hr>
+
+## 보안 그룹 확인
+Client VPN 엔드포인트에 적용된 보안 그룹이 인터넷으로의 아웃바운드 트래픽을 허용해야 인터넷 접속이 가능함  
+![Cap 2022-05-12 21-56-14-288](https://user-images.githubusercontent.com/46125158/168079827-73210ae6-3c6c-4da4-8a41-50c66f7ca178.png)
 
 <hr>
+
+## 
 
 ## 참고
 - **Client VPN 시작하기** - https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-getting-started.html
 - **Split-tunnel** - https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/split-tunnel-vpn.html
+- **Client VPN 사용 설명서** - https://docs.aws.amazon.com/ko_kr/vpn/latest/clientvpn-user/user-getting-started.html
