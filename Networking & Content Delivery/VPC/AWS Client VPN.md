@@ -71,6 +71,30 @@
 
 <hr>
 
+## AWS VPN Client 설정 및 사용
+- 프로그램 실행  
+  ![Cap 2022-05-12 22-23-46-924](https://user-images.githubusercontent.com/46125158/168089112-642f358e-f6f6-4d16-8fcb-69c1ee15cba5.png)  
+  ![Cap 2022-05-12 22-24-16-142](https://user-images.githubusercontent.com/46125158/168089185-23c3f5d0-2ccf-4bc3-993f-2ba3b2c357f8.png)
+
+- ovpn 파일 등록  
+  ![Cap 2022-05-12 22-25-02-223](https://user-images.githubusercontent.com/46125158/168089394-3a47dd05-192f-46c2-b571-f0663a705627.png)  
+  ![Cap 2022-05-12 22-25-52-023](https://user-images.githubusercontent.com/46125158/168089453-c011830d-18b8-439f-96ea-80aa8d3e4b08.png)  
+  ![Cap 2022-05-12 22-26-37-103](https://user-images.githubusercontent.com/46125158/168090045-be1c031e-9ed8-4458-accc-b2382bf27b12.png)  
+  ![Cap 2022-05-12 22-26-47-485](https://user-images.githubusercontent.com/46125158/168089551-69fd5964-2f73-4a70-beaa-ad359a0e1b0a.png)  
+  ![Cap 2022-05-12 22-27-13-782](https://user-images.githubusercontent.com/46125158/168089599-10180c97-aebe-43a2-a533-eaad3cc395fa.png)  
+  ![Cap 2022-05-12 22-28-12-596](https://user-images.githubusercontent.com/46125158/168089887-9bfaaecb-30df-4702-a3dd-39fe1a305d29.png)
+
+<hr>
+
+## Private 리소스 접근 테스트
+- AWS VPN Client 실행 후, Private Subnet에 있는 EC2 인스턴스 접속
+![Cap 2022-05-12 22-55-55-275](https://user-images.githubusercontent.com/46125158/168092133-9c522598-dad5-4dbb-8cb2-84da55a462d6.png)
+
+※ Split-tunnel 기능을 활성화했으므로 인터넷 접속도 가능  
+활성화 하지 않았다면 Client VPN Endpoint에 0.0.0.0/0에 대한 라우팅 테이블 추가 작업 필요
+
+<hr>
+
 ## 참고
 - **Client VPN 시작하기** - https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-getting-started.html
 - **Split-tunnel** - https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/split-tunnel-vpn.html
