@@ -43,7 +43,23 @@ Client VPN 엔드포인트에 적용된 보안 그룹이 인터넷으로의 아�
 
 <hr>
 
-## 
+## VPN 클라이언트 애플리케이션 설치
+[AWS Client VPN 다운로드](http://aws.amazon.com/vpn/client-vpn-download/)  
+![Cap 2022-05-12 22-01-44-816](https://user-images.githubusercontent.com/46125158/168080746-0bf52772-0780-4a14-8fd2-9d56b9c77db7.png)
+
+<hr>
+
+## Client VPN 엔드포인트 구성 파일 다운로드 및 수정
+![Cap 2022-05-12 21-59-52-571](https://user-images.githubusercontent.com/46125158/168080366-9efe21ab-5100-45b2-9f3c-cfcfebc07ab2.png)
+
+- downloaded-client-config.ovpn 파일 내용 조회
+  ![Cap 2022-05-12 22-05-28-809](https://user-images.githubusercontent.com/46125158/168081526-d52b66e5-6e67-4dfd-82f8-1e3a59c71b34.png)
+
+- downloaded-client-config.ovpn 파일 내용 수정(ca 밑에 cert와 key 내용 추가)  
+  ![Cap 2022-05-12 22-12-42-247](https://user-images.githubusercontent.com/46125158/168084273-d0d8c76c-79bf-482d-904a-fd91e97a32d2.png)  
+  ![Cap 2022-05-12 22-13-00-282](https://user-images.githubusercontent.com/46125158/168084286-7ef4ef64-8022-4843-bff0-85e4389e34ba.png)
+
+<hr>
 
 ## 참고
 - **Client VPN 시작하기** - https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-getting-started.html
