@@ -24,8 +24,8 @@
 - 대상 네트워크 연결
   ![Cap 2022-05-12 20-52-53-635](https://user-images.githubusercontent.com/46125158/168070088-0a243586-6d79-4fb3-8b52-5c99d784753c.png)  
   ![Cap 2022-05-12 20-54-17-681](https://user-images.githubusercontent.com/46125158/168070102-8bdf5069-266d-4d83-bef1-9fb03278124f.png)  
-  ![Cap 2022-05-12 20-55-27-210](https://user-images.githubusercontent.com/46125158/168070106-e640c14e-87d4-4970-abbc-1b22a6de7868.png)
-
+  ![Cap 2022-05-12 21-05-05-674](https://user-images.githubusercontent.com/46125158/168070982-292508df-5f80-4693-9d16-b5f328484900.png)  
+  ![Cap 2022-05-12 21-01-58-765](https://user-images.githubusercontent.com/46125158/168070341-2a1ff467-53c7-4a74-aacf-e980393b5a48.png)
 
 
 <hr>
