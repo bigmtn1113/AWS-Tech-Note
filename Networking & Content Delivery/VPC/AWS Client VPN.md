@@ -15,7 +15,8 @@
 
 ## Client VPN Endpoint 생성
 ![Cap 2022-05-12 20-29-28-063](https://user-images.githubusercontent.com/46125158/168066709-2908e74f-ebfd-4e67-b8ea-57c5f5afcf1b.png)  
-![Cap 2022-05-12 20-32-07-979](https://user-images.githubusercontent.com/46125158/168068008-59cc4093-cd9a-4ab0-a509-76c75ada135c.png)
+![Cap 2022-05-12 20-32-07-979](https://user-images.githubusercontent.com/46125158/168068008-59cc4093-cd9a-4ab0-a509-76c75ada135c.png)  
+![Cap 2022-05-12 20-48-41-611](https://user-images.githubusercontent.com/46125158/168068363-71df11e3-2686-44f2-acdc-af9ab0b95456.png)
 
 <hr>
 
