@@ -14,20 +14,20 @@
 <hr>
 
 ## Client VPN Endpoint 생성
-![Cap 2022-05-12 20-29-28-063](https://user-images.githubusercontent.com/46125158/168066709-2908e74f-ebfd-4e67-b8ea-57c5f5afcf1b.png)  
+![Cap 2022-05-12 20-29-28-063](https://user-images.githubusercontent.com/46125158/168224162-96ac1681-207e-443e-8d85-ce51f0159541.png)  
 ![Cap 2022-05-12 20-32-07-979](https://user-images.githubusercontent.com/46125158/168068008-59cc4093-cd9a-4ab0-a509-76c75ada135c.png)  
 ![Cap 2022-05-12 20-48-41-611](https://user-images.githubusercontent.com/46125158/168068363-71df11e3-2686-44f2-acdc-af9ab0b95456.png)
 
 <hr>
 
 ## Client VPN Endpoint 설정
-- 대상 네트워크 연결  
+- **대상 네트워크 연결**  
   ![Cap 2022-05-12 20-52-53-635](https://user-images.githubusercontent.com/46125158/168070088-0a243586-6d79-4fb3-8b52-5c99d784753c.png)  
   ![Cap 2022-05-12 20-54-17-681](https://user-images.githubusercontent.com/46125158/168070102-8bdf5069-266d-4d83-bef1-9fb03278124f.png)  
   ![Cap 2022-05-12 21-05-05-674](https://user-images.githubusercontent.com/46125158/168075999-b96968e9-57b7-45a4-a16a-26338011b077.png)  
   ![Cap 2022-05-12 21-01-58-765](https://user-images.githubusercontent.com/46125158/168070341-2a1ff467-53c7-4a74-aacf-e980393b5a48.png)  
 
-- 권한 부여 규칙 추가  
+- **권한 부여 규칙 추가**  
   클라이언트가 VPC에 액세스하려면 Client VPN 엔드포인트의 라우팅 테이블에 VPC로 연결되는 경로가 있고 권한 부여 규칙이 있어야 함  
   경로는 자동으로 추가됨  
   ![Cap 2022-05-12 21-12-10-155](https://user-images.githubusercontent.com/46125158/168075349-0c029fa3-3615-4c80-8fbd-80adec96694c.png)
@@ -38,16 +38,16 @@
 <hr>
 
 ## Network interfaces 확인
-가용성을 위해 Associate한 subnet 당 약 2개의 ENI가 생성됨  
-![Cap 2022-05-12 22-31-45-839](https://user-images.githubusercontent.com/46125158/168087054-676afc42-b1b4-4f6f-bd88-5db366c843bc.png)
+- **가용성을 위해 Associate한 subnet 당 약 2개의 ENI가 생성됨**  
+  ![Cap 2022-05-12 22-31-45-839](https://user-images.githubusercontent.com/46125158/168087054-676afc42-b1b4-4f6f-bd88-5db366c843bc.png)
 
 <hr>
 
 ## 보안 그룹 설정
-- Client VPN 엔드포인트에 적용된 보안 그룹이 인터넷으로의 아웃바운드 트래픽을 허용해야 인터넷 접속이 가능함  
+- **Client VPN 엔드포인트에 적용된 보안 그룹이 인터넷으로의 아웃바운드 트래픽을 허용해야 인터넷 접속이 가능함**  
   ![Cap 2022-05-12 21-56-14-288](https://user-images.githubusercontent.com/46125158/168079827-73210ae6-3c6c-4da4-8a41-50c66f7ca178.png)
 
-- Private Subnet에 있는 EC2 인스턴스 보안 그룹 인바운드 설정
+- **Private Subnet에 있는 EC2 인스턴스 보안 그룹 인바운드 설정**
   ![Cap 2022-05-12 22-37-07-005](https://user-images.githubusercontent.com/46125158/168088218-08eefd4d-8b21-4133-ba9d-f7a7ca795d8d.png)
 
 
@@ -62,21 +62,21 @@
 ## Client VPN 엔드포인트 구성 파일 다운로드 및 수정
 ![Cap 2022-05-12 21-59-52-571](https://user-images.githubusercontent.com/46125158/168080366-9efe21ab-5100-45b2-9f3c-cfcfebc07ab2.png)
 
-- downloaded-client-config.ovpn 파일 내용 조회
+- **downloaded-client-config.ovpn 파일 내용 조회**  
   ![Cap 2022-05-12 22-05-28-809](https://user-images.githubusercontent.com/46125158/168081526-d52b66e5-6e67-4dfd-82f8-1e3a59c71b34.png)
 
-- downloaded-client-config.ovpn 파일 내용 수정(ca 밑에 cert와 key 내용 추가)  
+- **downloaded-client-config.ovpn 파일 내용 수정(ca 밑에 cert와 key 내용 추가)**  
   ![Cap 2022-05-12 22-12-42-247](https://user-images.githubusercontent.com/46125158/168084273-d0d8c76c-79bf-482d-904a-fd91e97a32d2.png)  
   ![Cap 2022-05-12 22-13-00-282](https://user-images.githubusercontent.com/46125158/168084286-7ef4ef64-8022-4843-bff0-85e4389e34ba.png)
 
 <hr>
 
 ## AWS VPN Client 설정 및 사용
-- 프로그램 실행  
+- **프로그램 실행**  
   ![Cap 2022-05-12 22-23-46-924](https://user-images.githubusercontent.com/46125158/168089112-642f358e-f6f6-4d16-8fcb-69c1ee15cba5.png)  
   ![Cap 2022-05-12 22-24-16-142](https://user-images.githubusercontent.com/46125158/168089185-23c3f5d0-2ccf-4bc3-993f-2ba3b2c357f8.png)
 
-- ovpn 파일 등록  
+- **ovpn 파일 등록**  
   ![Cap 2022-05-12 22-25-02-223](https://user-images.githubusercontent.com/46125158/168089394-3a47dd05-192f-46c2-b571-f0663a705627.png)  
   ![Cap 2022-05-12 22-25-52-023](https://user-images.githubusercontent.com/46125158/168089453-c011830d-18b8-439f-96ea-80aa8d3e4b08.png)  
   ![Cap 2022-05-12 22-26-37-103](https://user-images.githubusercontent.com/46125158/168090045-be1c031e-9ed8-4458-accc-b2382bf27b12.png)  
@@ -85,14 +85,14 @@
 <hr>
 
 ## Private 리소스 접근 테스트
-- AWS VPN Client 실행 및 연결  
+- **AWS VPN Client 실행 및 연결**  
   ![Cap 2022-05-12 22-27-13-782](https://user-images.githubusercontent.com/46125158/168089599-10180c97-aebe-43a2-a533-eaad3cc395fa.png)  
   ![Cap 2022-05-12 22-28-12-596](https://user-images.githubusercontent.com/46125158/168094237-a5df2341-3a80-4723-a5d5-bc6167c7ef60.png)
 
-- Private Subnet에 있는 EC2 인스턴스 접속  
+- **Private Subnet에 있는 EC2 인스턴스 접속**  
 ![Cap 2022-05-12 22-55-55-275](https://user-images.githubusercontent.com/46125158/168092133-9c522598-dad5-4dbb-8cb2-84da55a462d6.png)
 
-※ Split-tunnel 기능을 활성화했으므로 인터넷 접속도 가능  
+※ **Split-tunnel 기능을 활성화했으므로 인터넷 접속도 가능**  
 활성화 하지 않았다면 Client VPN Endpoint에 0.0.0.0/0에 대한 라우팅 테이블 추가 작업 필요
 
 <hr>
