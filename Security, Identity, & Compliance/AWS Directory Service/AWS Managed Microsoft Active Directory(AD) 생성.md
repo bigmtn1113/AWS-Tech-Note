@@ -2,6 +2,11 @@
 
 <br/>
 
+## Architecture 참고
+![image](https://user-images.githubusercontent.com/46125158/168287819-996f6ba8-7f6a-4140-8501-5cc375635ba2.png)
+
+<hr>
+
 ## 사전 작업
 - **VPC에 Private Subnet 2개 생성**  
   ※ 최소 2개의 서브넷. 각 서브넷은 서로 다른 가용 영역에 존재해야 함
