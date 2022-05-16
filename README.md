@@ -26,4 +26,4 @@
 
 ## Storage
 ### ⭐ Amazon FSx
-- [Amazon FSx for Windows File Server을 이용한 Windows 파일 공유]() - AWS Managed Microsoft AD으로 인증
+- [Amazon FSx for Windows File Server을 이용한 Windows 파일 공유](https://github.com/kva231/AWS-Tech-Note/blob/master/Storage/Amazon%20FSx/Amazon%20FSx%20for%20Windows%20File%20Server%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20Windows%20%ED%8C%8C%EC%9D%BC%20%EA%B3%B5%EC%9C%A0.md) - AWS Managed Microsoft AD으로 인증
