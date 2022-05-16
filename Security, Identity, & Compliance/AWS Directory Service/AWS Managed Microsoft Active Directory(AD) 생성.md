@@ -27,7 +27,7 @@
 <hr>
 
 ## 보안 그룹 확인
-※ **사용자 AWS 관리형 Microsoft AD와 통신할 수 있는 유일한 인바운드 트래픽는 로컬 VPC 및 VPC 라우팅 트래픽**  
+※ **사용자의 AWS Managed Microsoft AD와 통신할 수 있는 유일한 인바운드 트래픽는 로컬 VPC 및 VPC 라우팅 트래픽**  
 도메인 컨트롤러에 대한 트래픽이 VPC, 다른 피어링된 VPC 또는 AWS Direct Connect, AWS Transit Gateway 또는 가상 프라이빗 네트워크를 사용하여 
 연결한 네트워크에서의 트래픽으로 제한되므로 0.0.0.0/0 규칙은 보안 취약성을 발생시키지 않음
 
