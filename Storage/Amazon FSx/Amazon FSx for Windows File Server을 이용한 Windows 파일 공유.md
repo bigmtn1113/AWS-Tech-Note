@@ -19,4 +19,4 @@
 <hr>
 
 ## 참고
-- **내용** - URL
+- **보안 그룹 설정** - https://docs.aws.amazon.com/fsx/latest/WindowsGuide/limit-access-security-groups.html
