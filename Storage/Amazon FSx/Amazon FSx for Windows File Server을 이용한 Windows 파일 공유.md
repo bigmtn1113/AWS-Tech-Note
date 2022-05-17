@@ -14,9 +14,31 @@
 
 <hr>
 
-## 내용
+## EC2 인스턴스 접속
+- **보안 그룹 인바운드 설정**  
+
+
+<hr>
+
+## Domain Join
+
+
+<hr>
+
+## Amazon FSx for Windows File Server 생성
+- **보안 그룹 생성**  
+
+
+<hr>
+
+## Network Drive 매핑
+
+<hr>
+
+## 파일 공유 테스트 및 확인
 
 <hr>
 
 ## 참고
 - **보안 그룹 설정** - https://docs.aws.amazon.com/fsx/latest/WindowsGuide/limit-access-security-groups.html
+- **Windows 인스턴스 수동 도메인 조인** - https://docs.aws.amazon.com/directoryservice/latest/admin-guide/join_windows_instance.html
