@@ -15,7 +15,17 @@
 <hr>
 
 ## EC2 인스턴스 접속
-- **보안 그룹 인바운드 설정**  
+- **EC2 보안 그룹 인바운드 설정**  
+  ![Cap 2022-05-17 21-06-56-320](https://user-images.githubusercontent.com/46125158/168967439-581647f4-5be7-4848-912e-325b63ba4b02.png)
+
+- **EC2 Password 확인**  
+  ![Cap 2022-05-17 21-02-59-681](https://user-images.githubusercontent.com/46125158/168967604-652b89d2-5905-49f1-bbd4-1985f81b6b89.png)  
+  ![Cap 2022-05-17 21-03-18-231](https://user-images.githubusercontent.com/46125158/168967613-3df947a7-4d7c-4940-81c0-a131408a27b3.png)  
+  ![Cap 2022-05-17 21-03-31-064](https://user-images.githubusercontent.com/46125158/168967625-cf8aa238-b504-4263-9bae-317a7e16823f.png)
+
+- **로그인**  
+  ![Cap 2022-05-17 21-07-57-286](https://user-images.githubusercontent.com/46125158/168968967-69a6fe77-cdc3-4299-a2d6-d117cf49fadf.png)  
+
 
 
 <hr>
