@@ -71,10 +71,18 @@
 <hr>
 
 ## Network Drive 매핑
+### Amazon FSx for Windows File Server DNS 이름 확인
+![Cap 2022-05-17 21-53-32-723](https://user-images.githubusercontent.com/46125158/169030285-d2e3bc60-9a03-49c1-aaae-848dbe459472.png)
+
+### Network Drive 매핑
+![Cap 2022-05-17 21-52-37-174](https://user-images.githubusercontent.com/46125158/169029863-b9682820-f5d8-46ca-a8ae-c62570642917.png)  
+![Cap 2022-05-17 21-54-02-820](https://user-images.githubusercontent.com/46125158/169031608-9cdccf88-00d7-476f-8e2a-320e3a0016a1.png)  
+![Cap 2022-05-17 21-54-29-083](https://user-images.githubusercontent.com/46125158/169031986-c468e770-3a05-4c18-9bad-a588f004be1d.png)
 
 <hr>
 
 ## 파일 공유 테스트 및 확인
+![Cap 2022-05-17 21-55-13-481](https://user-images.githubusercontent.com/46125158/169032469-e196e7be-f7e8-4aac-8088-29ed9af718aa.png)
 
 <hr>
 
