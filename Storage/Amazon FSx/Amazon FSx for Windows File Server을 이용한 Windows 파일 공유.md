@@ -56,8 +56,17 @@
 <hr>
 
 ## Amazon FSx for Windows File Server 생성
-- **보안 그룹 생성**  
+- **FSx에 적용할 보안 그룹 생성**  
+  ![Cap 2022-05-17 21-19-21-178](https://user-images.githubusercontent.com/46125158/169027314-973a2535-6074-4a7a-95c3-6c503860e444.png)  
+  ![Cap 2022-05-17 21-24-21-639](https://user-images.githubusercontent.com/46125158/169027646-5daec901-7a99-48da-953d-63df8b1c4bfd.png)
 
+- **Amazon FSx for Windows File Server 생성**  
+  ![Cap 2022-05-17 21-15-22-357](https://user-images.githubusercontent.com/46125158/169027793-7db20461-80e7-424f-9841-35dda07881f5.png)  
+  ![Cap 2022-05-17 21-15-41-341](https://user-images.githubusercontent.com/46125158/169027877-414b9ebd-f7ca-42bf-9310-ee6971b540f4.png)  
+  ![Cap 2022-05-17 21-16-36-506](https://user-images.githubusercontent.com/46125158/169028165-7976b787-a7ca-4ed7-a118-64bf0fc2d3ae.png)  
+  ![Cap 2022-05-17 21-25-48-446](https://user-images.githubusercontent.com/46125158/169028699-c2a83357-704c-4a9f-ab96-9e19d9cd5820.png)  
+  ![Cap 2022-05-17 21-26-34-694](https://user-images.githubusercontent.com/46125158/169028793-11ba851c-b2d8-44bf-93f9-26cdbf09acfe.png)  
+  ![Cap 2022-05-17 21-51-29-641](https://user-images.githubusercontent.com/46125158/169029028-7bad82e5-8e53-4387-b902-6463377ac7fd.png)
 
 <hr>
 
