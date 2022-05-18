@@ -49,9 +49,9 @@
   도메인의 정규화된 이름이나 NetBios 이름, 백슬래시(\\), 사용자 이름 차례로 입력 가능  
   AWS Managed Microsoft AD를 사용하는 경우 사용자 이름은 Admin  
   ex) bigmtn.com\admin 또는 bigmtn\admin  
-  ![Cap 2022-05-17 21-14-10-085](https://user-images.githubusercontent.com/46125158/168986537-fec2bc72-f7c8-4277-a2db-588bc5e54d9d.png)
-
-
+  ![Cap 2022-05-17 21-14-10-085](https://user-images.githubusercontent.com/46125158/168986537-fec2bc72-f7c8-4277-a2db-588bc5e54d9d.png)  
+  **재부팅**  
+  ![Cap 2022-05-17 21-14-46-340](https://user-images.githubusercontent.com/46125158/168989290-c873e54e-d45d-4edb-b7c7-3363b11d5903.png)
 
 <hr>
 
