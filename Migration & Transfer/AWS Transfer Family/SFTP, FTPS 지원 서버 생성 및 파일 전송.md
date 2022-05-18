@@ -97,18 +97,18 @@
 <hr>
 
 ## FileZilla를 사용하여 파일 전송
-- **Endpoint or EIP**  
-  ![Cap 2022-05-08 18-34-19-150](https://user-images.githubusercontent.com/46125158/167290419-e45e544d-3f54-4df0-9fbd-26e493194592.png)
+### Endpoint or EIP 확인
+![Cap 2022-05-08 18-34-19-150](https://user-images.githubusercontent.com/46125158/167290419-e45e544d-3f54-4df0-9fbd-26e493194592.png)
 
-- **SSH Key Pair를 이용한 접근**(FTPS는 이용 불가. FTPS는 ID/PW로만 접근 가능)  
-  ![Cap 2022-05-08 18-45-41-181](https://user-images.githubusercontent.com/46125158/167290832-1f8d1df3-0f17-49fc-b04a-fd8c4e593258.png)
+### SSH Key Pair를 이용한 접근(FTPS는 이용 불가. FTPS는 ID/PW로만 접근 가능)
+![Cap 2022-05-08 18-45-41-181](https://user-images.githubusercontent.com/46125158/167290832-1f8d1df3-0f17-49fc-b04a-fd8c4e593258.png)
 
-- **ID/PW를 이용한 접근**  
-  ![Cap 2022-05-08 18-34-53-074](https://user-images.githubusercontent.com/46125158/167290599-319d7693-30db-4867-8078-c0ad68a0b396.png)
-  ![Cap 2022-05-08 19-18-28-431](https://user-images.githubusercontent.com/46125158/167291881-000326dd-9cd8-4c18-8661-05bf0e9dc8dd.png)
+### ID/PW를 이용한 접근
+![Cap 2022-05-08 18-34-53-074](https://user-images.githubusercontent.com/46125158/167290599-319d7693-30db-4867-8078-c0ad68a0b396.png)
+![Cap 2022-05-08 19-18-28-431](https://user-images.githubusercontent.com/46125158/167291881-000326dd-9cd8-4c18-8661-05bf0e9dc8dd.png)
 
-- **결과**  
-  ![Cap 2022-05-08 19-47-48-601](https://user-images.githubusercontent.com/46125158/167292659-de9a3973-6255-4f3f-aae0-ffed6e878d54.png)
+### 결과
+![Cap 2022-05-08 19-47-48-601](https://user-images.githubusercontent.com/46125158/167292659-de9a3973-6255-4f3f-aae0-ffed6e878d54.png)
 
 <hr>
 
