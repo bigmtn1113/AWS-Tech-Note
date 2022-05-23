@@ -2,9 +2,9 @@
 
 <br/>
 
-## Networking & Content Delivery
-### ⭐ VPC
-- [AWS Client VPN을 이용한 Private 리소스 접근](https://github.com/kva231/AWS-Tech-Note/blob/master/Networking%20&%20Content%20Delivery/VPC/AWS%20Client%20VPN%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20Private%20%EB%A6%AC%EC%86%8C%EC%8A%A4%20%EC%A0%91%EA%B7%BC.md)
+## End User Computing
+### ⭐ Amazon WorkSpaces
+- [Amazon WorkSpaces 생성]()
 
 <hr>
 
@@ -12,6 +12,12 @@
 ### ⭐ AWS Transfer Family
 - [SFTP 지원 서버 생성 및 파일 전송](https://github.com/kva231/AWS-Tech-Note/blob/master/Migration%20%26%20Transfer/AWS%20Transfer%20Family/SFTP%20%EC%A7%80%EC%9B%90%20%EC%84%9C%EB%B2%84%20%EC%83%9D%EC%84%B1%20%EB%B0%8F%20%ED%8C%8C%EC%9D%BC%20%EC%A0%84%EC%86%A1.md)　　　　- SSH Key Pair를 이용한 접근
 - [SFTP, FTPS 지원 서버 생성 및 파일 전송](https://github.com/kva231/AWS-Tech-Note/blob/master/Migration%20%26%20Transfer/AWS%20Transfer%20Family/SFTP%2C%20FTPS%20%EC%A7%80%EC%9B%90%20%EC%84%9C%EB%B2%84%20%EC%83%9D%EC%84%B1%20%EB%B0%8F%20%ED%8C%8C%EC%9D%BC%20%EC%A0%84%EC%86%A1.md)　 - SSH Key Pair, ID/PW를 이용한 접근
+
+<hr>
+
+## Networking & Content Delivery
+### ⭐ VPC
+- [AWS Client VPN을 이용한 Private 리소스 접근](https://github.com/kva231/AWS-Tech-Note/blob/master/Networking%20&%20Content%20Delivery/VPC/AWS%20Client%20VPN%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20Private%20%EB%A6%AC%EC%86%8C%EC%8A%A4%20%EC%A0%91%EA%B7%BC.md)
 
 <hr>
 
