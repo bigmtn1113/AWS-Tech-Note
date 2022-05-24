@@ -4,7 +4,7 @@
 
 ## End User Computing
 ### ⭐ Amazon WorkSpaces
-- [Amazon WorkSpaces 생성]()
+- [Amazon WorkSpaces 생성](https://github.com/kva231/AWS-Tech-Note/blob/master/End%20User%20Computing/Amazon%20WorkSpaces/Amazon%20WorkSpaces%20%EC%83%9D%EC%84%B1.md)
 
 <hr>
 
