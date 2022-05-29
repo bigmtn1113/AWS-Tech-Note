@@ -12,10 +12,10 @@
 
 <hr>
 
-## 내용
+## WorkSpace 생성
 
 
 <hr>
 
 ## 참고
-- **내용** - 링크
+- **AWS Managed Microsoft AD를 사용하여 WorkSpace 시작** - https://docs.aws.amazon.com/workspaces/latest/adminguide/launch-workspace-microsoft-ad.html
