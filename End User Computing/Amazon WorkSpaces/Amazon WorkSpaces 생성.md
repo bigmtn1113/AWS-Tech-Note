@@ -56,7 +56,7 @@
 ### WorkSpace 접속 확인
 ![Cap 2022-05-29 18-26-04-879](https://user-images.githubusercontent.com/46125158/170991706-75542c9f-1811-48e6-aa71-a7d6467531af.png)  
 
-
+<hr>
 
 ## 참고
 - **AWS Managed Microsoft AD를 사용하여 WorkSpace 시작** - https://docs.aws.amazon.com/workspaces/latest/adminguide/launch-workspace-microsoft-ad.html
