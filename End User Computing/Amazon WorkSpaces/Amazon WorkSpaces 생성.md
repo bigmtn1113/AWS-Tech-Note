@@ -35,8 +35,28 @@
 ### 생성 완료
 ![Cap 2022-05-29 18-13-06-716](https://user-images.githubusercontent.com/46125158/170990189-742176b8-120f-4407-8efe-6fb402c1e4e9.png)  
 
-
 <hr>
+
+## WorkSpace 연결
+### WorkSpace 생성할 때 지정한 사용자의 이메일 확인
+![Cap 2022-05-29 18-16-29-538](https://user-images.githubusercontent.com/46125158/170991529-17d2ca58-e0e9-4bf3-8b16-da81c187c1a4.png)  
+
+### 사용자 프로필 작성
+![Cap 2022-05-29 18-17-24-623](https://user-images.githubusercontent.com/46125158/170991554-606e3bec-7289-4d52-9f71-b98998f93ae3.png)  
+
+### WorkSpaces 클라이언트 다운로드 및 설치
+![Cap 2022-05-29 18-18-04-859](https://user-images.githubusercontent.com/46125158/170991597-f5056584-9289-413e-bb11-dda26922625b.png)  
+![Cap 2022-05-29 18-19-04-950](https://user-images.githubusercontent.com/46125158/170991628-1e4dd4b9-7b94-4762-a74e-315c7144e56b.png)  
+
+### WorkSpace 접속
+![Cap 2022-05-29 18-22-33-939](https://user-images.githubusercontent.com/46125158/170991665-04e23fb1-cc5d-4e85-b28a-2ce7e9b55eb1.png)  
+![Cap 2022-05-29 18-24-32-453](https://user-images.githubusercontent.com/46125158/170991678-7e9ede48-b7a8-4525-a4b5-414677eedb1c.png)  
+![Cap 2022-05-29 18-24-59-198](https://user-images.githubusercontent.com/46125158/170991684-24a005de-2b14-40bb-a1a4-7cd7c5449b28.png)  
+
+### WorkSpace 접속 확인
+![Cap 2022-05-29 18-26-04-879](https://user-images.githubusercontent.com/46125158/170991706-75542c9f-1811-48e6-aa71-a7d6467531af.png)  
+
+
 
 ## 참고
 - **AWS Managed Microsoft AD를 사용하여 WorkSpace 시작** - https://docs.aws.amazon.com/workspaces/latest/adminguide/launch-workspace-microsoft-ad.html
