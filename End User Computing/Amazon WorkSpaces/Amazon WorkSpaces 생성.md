@@ -60,3 +60,4 @@
 
 ## 참고
 - **AWS Managed Microsoft AD를 사용하여 WorkSpace 시작** - https://docs.aws.amazon.com/workspaces/latest/adminguide/launch-workspace-microsoft-ad.html
+- **WorkSpaces 보안 그룹** - https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces-security-groups.html
