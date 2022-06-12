@@ -51,7 +51,16 @@
 ![Cap 2022-06-11 21-49-39-224](https://user-images.githubusercontent.com/46125158/173219554-d762fbb2-6eeb-49b9-9db3-5bf9b03dba63.png)  
 ![Cap 2022-06-11 21-49-48-458](https://user-images.githubusercontent.com/46125158/173219557-afd3864d-5a15-45cc-bb1d-9f8c56a211e1.png)
 
+**※ IP가 아닌 Private IP DNS name로 Ping Test를 하고 싶을 경우**  
+![Cap 2022-06-12 15-39-00-482](https://user-images.githubusercontent.com/46125158/173220766-67e315f4-1d03-4bc7-bb71-d0c01afa2ffc.png)
+
+**두 속성이 모두 활성화 되어 있어야 Amazon Route 53 Resolver 서버가 Amazon에서 제공한 프라이빗 DNS 호스트 이름 확인 가능**  
+**Amazon Route 53의 Private Hosting Zone에서 정의된 사용자 지정 DNS 도메인 이름을 사용할 때도 필요**  
+![Cap 2022-06-12 15-37-47-163](https://user-images.githubusercontent.com/46125158/173220791-c36090ab-6ced-4f42-899a-a79e424ebb82.png)  
+![Cap 2022-06-12 15-37-58-270](https://user-images.githubusercontent.com/46125158/173220793-16809487-4dc9-4f5c-9672-1222caa47344.png)
+
 <hr>
 
 ## 참고
 - **VPC peering connection lifecycle** - https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-basics.html#vpc-peering-lifecycle
+- **VPC DNS 속성** - https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html#vpc-dns-support
