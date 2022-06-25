@@ -11,6 +11,8 @@
 ### VPC Peering Connection할 두 VPC 생성
 ![Cap 2022-06-11 18-18-13-168](https://user-images.githubusercontent.com/46125158/173217138-3512a457-c842-4e29-96fa-092ced644c1e.png)
 
+### Private EC2 접속을 위한 Bastion 생성
+
 <hr>
 
 ## VPC Peering Connection 설정
