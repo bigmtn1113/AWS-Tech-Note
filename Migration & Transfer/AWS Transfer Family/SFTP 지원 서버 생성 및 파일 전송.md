@@ -17,9 +17,10 @@
 <hr>
 
 ## 사전 작업
-- [IAM, S3 Bucket, SSH Key Pair 생성](https://github.com/kva231/AWS-Tech-Note/blob/master/Migration%20%26%20Transfer/AWS%20Transfer%20Family/%EC%82%AC%EC%A0%84%20%EC%9E%91%EC%97%85.md)
-- Endpoint에 적용할 VPC default 보안 그룹 설정(SFTP Port)
-  ![Cap 2022-05-08 20-02-12-109](https://user-images.githubusercontent.com/46125158/167293256-25846871-88fe-4b65-bac4-da9093fef9e7.png)
+### [IAM, S3 Bucket, SSH Key Pair 생성](https://github.com/kva231/AWS-Tech-Note/blob/master/Migration%20%26%20Transfer/AWS%20Transfer%20Family/%EC%82%AC%EC%A0%84%20%EC%9E%91%EC%97%85.md)
+
+### Endpoint에 적용할 VPC default 보안 그룹 설정(SFTP Port)
+![Cap 2022-05-08 20-02-12-109](https://user-images.githubusercontent.com/46125158/167293256-25846871-88fe-4b65-bac4-da9093fef9e7.png)
 
 <hr>
 
