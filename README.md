@@ -4,7 +4,7 @@
 
 ## Analytics
 ### ⭐ Kinesis
-- [WAF logs를 S3로 전송]() - Amazon Kinesis Data Firehose 이용
+- [WAF logs를 S3로 전송](https://github.com/kva231/AWS-Tech-Note/blob/master/Analytics/Kinesis/WAF%20logs%EB%A5%BC%20S3%EB%A1%9C%20%EC%A0%84%EC%86%A1.md) - Amazon Kinesis Data Firehose 이용
 
 <hr>
 
