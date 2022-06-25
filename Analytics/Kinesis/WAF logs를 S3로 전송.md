@@ -69,7 +69,8 @@
 
 ### ※ CloudWatch Log group error logs 전송 테스트
 #### Amazon Kinesis Data Firehose 생성하면서 만들어진 IAM role(KinesisFirehoseServiceRole-aws-waf~...)에서 S3 관련 권한 제거 후, 테스트 진행
-![Cap 2022-06-25 22-14-00-298](https://user-images.githubusercontent.com/46125158/175775211-53c8c840-61d5-44c0-b364-062417956785.png)
+![Cap 2022-06-25 22-14-00-298](https://user-images.githubusercontent.com/46125158/175775211-53c8c840-61d5-44c0-b364-062417956785.png)  
+결과 확인 후, 다시 S3 권한 추가
 
 <hr>
 
