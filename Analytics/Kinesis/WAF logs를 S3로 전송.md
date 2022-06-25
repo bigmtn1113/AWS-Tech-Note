@@ -8,6 +8,8 @@
 <hr>
 
 ## 사전 작업
+**※ WAF, Kinesis Data Firehose, S3 모두 동일 리전에 생성해야 함**
+
 ### ALB, EC2 생성 후 연결
 ![Cap 2022-06-25 17-14-32-864](https://user-images.githubusercontent.com/46125158/175768956-7e2c968f-ea5a-4bc3-974e-611681aa8c45.png)   
 ![Cap 2022-06-25 17-14-57-750](https://user-images.githubusercontent.com/46125158/175768962-37c9f57e-487f-4b66-967c-1d29dbc5563f.png)
@@ -77,5 +79,10 @@
 ### 확인
 ![Cap 2022-06-25 20-46-36-990](https://user-images.githubusercontent.com/46125158/175772446-b796b331-3b08-4988-b40f-687127761808.png)
 
+<hr>
+
 ## 참고
-- **내용** - 링크
+- **AWS Support** - https://aws.amazon.com/ko/premiumsupport/knowledge-center/waf-configure-comprehensive-logging/
+- **Amazon Kinesis Data Firehose 전송 스트림 생성** - https://docs.aws.amazon.com/firehose/latest/dev/basic-create.html
+- **샘플 데이터를 사용하여 전송 스트림 테스트** - https://docs.aws.amazon.com/firehose/latest/dev/test-drive-firehose.html
+- **CloudWatch Logs를 사용하여 Kinesis Data Firehose 모니터링** - https://docs.aws.amazon.com/firehose/latest/dev/monitoring-with-cloudwatch-logs.html
