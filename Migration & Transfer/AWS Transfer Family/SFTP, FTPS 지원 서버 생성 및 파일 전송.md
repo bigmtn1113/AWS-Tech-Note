@@ -17,13 +17,18 @@
 <hr>
 
 ## 사전 작업
-- [IAM, S3 Bucket, SSH Key Pair 생성](https://github.com/kva231/AWS-Tech-Note/blob/master/Migration%20%26%20Transfer/AWS%20Transfer%20Family/%EC%82%AC%EC%A0%84%20%EC%9E%91%EC%97%85.md)
-- [서버 및 클라이언트 인증서와 키를 생성 후, ACM 업로드](https://github.com/kva231/AWS-Tech-Note/blob/master/Security%2C%20Identity%2C%20%26%20Compliance/AWS%20Certificate%20Manager/%EC%84%9C%EB%B2%84%20%EB%B0%8F%20%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%20%EC%9D%B8%EC%A6%9D%EC%84%9C%EC%99%80%20%ED%82%A4%EB%A5%BC%20%EC%83%9D%EC%84%B1%20%ED%9B%84%2C%20ACM%20%EC%97%85%EB%A1%9C%EB%93%9C.md)
-- [AWS CLI 설치](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
-- [AWS SAM CLI 설치](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
-- VPC, Public Subnet, EIP 생성
-- Endpoint에 적용할 VPC default 보안 그룹 설정(SFTP, FTPS Ports)  
-  ![Cap 2022-05-08 19-53-29-102](https://user-images.githubusercontent.com/46125158/167293042-5dd3f740-0a0d-4d7c-b1a0-87d909b2482d.png)
+### [IAM, S3 Bucket, SSH Key Pair 생성](https://github.com/kva231/AWS-Tech-Note/blob/master/Migration%20%26%20Transfer/AWS%20Transfer%20Family/%EC%82%AC%EC%A0%84%20%EC%9E%91%EC%97%85.md)
+
+### [서버 및 클라이언트 인증서와 키를 생성 후, ACM 업로드](https://github.com/kva231/AWS-Tech-Note/blob/master/Security%2C%20Identity%2C%20%26%20Compliance/AWS%20Certificate%20Manager/%EC%84%9C%EB%B2%84%20%EB%B0%8F%20%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%20%EC%9D%B8%EC%A6%9D%EC%84%9C%EC%99%80%20%ED%82%A4%EB%A5%BC%20%EC%83%9D%EC%84%B1%20%ED%9B%84%2C%20ACM%20%EC%97%85%EB%A1%9C%EB%93%9C.md)
+
+### [AWS CLI 설치](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+### [AWS SAM CLI 설치](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
+
+### VPC, Public Subnet, EIP 생성
+
+### Endpoint에 적용할 VPC default 보안 그룹 설정(SFTP, FTPS Ports)  
+![Cap 2022-05-08 19-53-29-102](https://user-images.githubusercontent.com/46125158/167293042-5dd3f740-0a0d-4d7c-b1a0-87d909b2482d.png)
 
 <hr>
 
