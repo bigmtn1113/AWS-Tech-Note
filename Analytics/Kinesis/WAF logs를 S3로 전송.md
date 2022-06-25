@@ -28,7 +28,7 @@
 ![Cap 2022-06-25 17-24-05-656](https://user-images.githubusercontent.com/46125158/175769853-9156eb60-b6fb-4a7b-be12-b92886b013af.png)
 
 ### Source, Destination, Delivery stream name 설정
-![Cap 2022-06-25 17-57-54-718](https://user-images.githubusercontent.com/46125158/175769900-ec071c85-a44a-4d60-b1a3-3b8183783750.png)
+![Cap 2022-06-25 17-57-54-718](https://user-images.githubusercontent.com/46125158/175769900-ec071c85-a44a-4d60-b1a3-3b8183783750.png)  
 - Source  
   데이터 생성자. 레코드를 Kinesis Data Firehose 전송 스트림으로 전달. 여기선 AWS WAF Web ACL logs
 - Destination  
@@ -38,12 +38,12 @@
 
 ### Destination 설정
 ![Cap 2022-06-25 17-58-20-035](https://user-images.githubusercontent.com/46125158/175770161-b969f780-425c-4acd-aaaa-c5b4b4673340.png)  
-![Cap 2022-06-25 17-58-54-573](https://user-images.githubusercontent.com/46125158/175770350-68f2266e-42e0-420b-aa4b-acf7bfa8bf88.png)
+![Cap 2022-06-25 17-58-54-573](https://user-images.githubusercontent.com/46125158/175770350-68f2266e-42e0-420b-aa4b-acf7bfa8bf88.png)  
 - Buffer size 및 Buffer interval  
   Kinesis Data Firehose는 수신 스트리밍 데이터를 특정 크기로 또는 특정 기간 동안 버퍼링하여 대상으로 전달
 
 ### Advanced 설정
-![Cap 2022-06-25 17-59-34-174](https://user-images.githubusercontent.com/46125158/175770529-2f43944a-cf0f-488c-8567-d22cbe4724bb.png)
+![Cap 2022-06-25 17-59-34-174](https://user-images.githubusercontent.com/46125158/175770529-2f43944a-cf0f-488c-8567-d22cbe4724bb.png)  
 - Amazon CloudWatch error logging  
   Kinesis Data Firehose가 CloudWatch Logs에 레코드 전송 오류를 기록하도록 하려면 Enabled 선택
 
@@ -74,10 +74,16 @@
 ![Cap 2022-06-25 18-46-20-267](https://user-images.githubusercontent.com/46125158/175772262-6d3ce07c-96ef-452e-9097-1d5cb92949b7.png)
 
 ### 로깅 활성화
-![Cap 2022-06-25 18-46-40-730](https://user-images.githubusercontent.com/46125158/175772406-01dc27f4-19b3-4f16-abfd-aeb30fb19a06.png)  
+![Cap 2022-06-25 18-46-40-730](https://user-images.githubusercontent.com/46125158/175774108-a4da0b28-0e67-4fc4-913c-9f422c62afaf.png)  
+- IAM Role  
+  AWS WAF에서 이 역할을 관리. AWS WAF에 'aws-waf-logs-'로 시작하는 Kinesis Data Firehose 전송 스트림 쓰기 권한 부여
 
 ### 확인
+#### 로깅 활성화 상태
 ![Cap 2022-06-25 20-46-36-990](https://user-images.githubusercontent.com/46125158/175772446-b796b331-3b08-4988-b40f-687127761808.png)
+
+#### IAM Role
+![Cap 2022-06-25 22-03-36-831](https://user-images.githubusercontent.com/46125158/175774681-14443db5-8845-450a-8932-1a18fa17cba3.png)
 
 <hr>
 
