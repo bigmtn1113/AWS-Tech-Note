@@ -63,9 +63,13 @@
 ### Deliverty Stream 선택 후 테스트 진행
 ![Cap 2022-06-25 18-50-46-402](https://user-images.githubusercontent.com/46125158/175772759-9984f62f-14d2-45ba-855e-e56d7f2766ef.png)
 
-### S3 Bucket에 데이터가 전송되었는 지 확인
+### S3 Bucket에 데이터가 전송되었는지 확인
 ![Cap 2022-06-25 18-56-50-381](https://user-images.githubusercontent.com/46125158/175772724-a9833f37-136c-46e8-83b2-b71b7ad5812d.png)  
 ![Cap 2022-06-25 18-58-00-714](https://user-images.githubusercontent.com/46125158/175772739-9ca82df5-dcfc-4e01-b315-b5e7bb4409ab.png)
+
+### ※ CloudWatch Log group error logs 전송 테스트
+#### Amazon Kinesis Data Firehose 생성하면서 만들어진 IAM role(KinesisFirehoseServiceRole-aws-waf~...)에서 S3 관련 권한 제거 후, 테스트 진행
+![Cap 2022-06-25 22-14-00-298](https://user-images.githubusercontent.com/46125158/175775211-53c8c840-61d5-44c0-b364-062417956785.png)
 
 <hr>
 
@@ -75,7 +79,7 @@
 
 ### 로깅 활성화
 ![Cap 2022-06-25 18-46-40-730](https://user-images.githubusercontent.com/46125158/175774108-a4da0b28-0e67-4fc4-913c-9f422c62afaf.png)  
-- IAM Role  
+- IAM role  
   AWS WAF에서 이 역할을 관리. AWS WAF에 'aws-waf-logs-'로 시작하는 Kinesis Data Firehose 전송 스트림 쓰기 권한 부여
 
 ### 확인
