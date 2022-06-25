@@ -58,7 +58,14 @@
 <hr>
 
 ## AWS WAF를 Kinesis Data Firehose와 연결
+### WAF Web ACL 선택
+![Cap 2022-06-25 18-46-20-267](https://user-images.githubusercontent.com/46125158/175772262-6d3ce07c-96ef-452e-9097-1d5cb92949b7.png)
 
+### 로깅 활성화
+![Cap 2022-06-25 18-46-40-730](https://user-images.githubusercontent.com/46125158/175772406-01dc27f4-19b3-4f16-abfd-aeb30fb19a06.png)  
+
+### 확인
+![Cap 2022-06-25 20-46-36-990](https://user-images.githubusercontent.com/46125158/175772446-b796b331-3b08-4988-b40f-687127761808.png)
 
 ## 참고
 - **내용** - 링크
