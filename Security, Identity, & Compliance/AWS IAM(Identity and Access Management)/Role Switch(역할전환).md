@@ -53,6 +53,24 @@
 
 <hr>
 
+## AWS CLI 이용
+### aws configure 실행
+**AWS CLI는 민감한 자격 증명 정보를 홈 디렉터리의 .aws라는 폴더에 있는 credentials라는 로컬 파일에 저장**  
+**덜 민감한 구성 옵션은 홈 디렉터리의 .aws 폴더에 있는 config라는 로컬 파일에 저장됨**  
+![Cap 2022-07-10 21-26-23-591](https://user-images.githubusercontent.com/46125158/178145407-ffee58d6-7e34-4530-9644-49dcc53ed720.png)
+
+### ~/.aws/credentials 내용 확인
+![Cap 2022-07-10 21-25-27-963](https://user-images.githubusercontent.com/46125158/178145449-50299961-147f-43ba-96f7-61aa9c991b3d.png)
+
+### ~/.aws/config 편집
+**Prod Account에서 생성한 Role arn 등록**  
+![Cap 2022-07-10 21-27-24-440](https://user-images.githubusercontent.com/46125158/178145193-d2dd5ac1-9a9f-4ed0-a69b-ff3015f41f28.png)
+
+### 확인
+![Cap 2022-07-10 21-28-41-734](https://user-images.githubusercontent.com/46125158/178145233-304a08cc-7359-4bd7-9cb6-6b8e92cdc1f0.png)
+
+<hr>
+
 ## ※ AWS Extend Switch Roles 사용
 ### AWS Extend Switch Roles Chrome에 추가
 ![Cap 2022-07-10 16-52-31-724](https://user-images.githubusercontent.com/46125158/178136596-cadc53a5-c684-41a2-9444-5fa3841d7157.png)  
