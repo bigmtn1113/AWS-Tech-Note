@@ -11,10 +11,12 @@
 
 ### AWS Account 두 개(Dev. Prod) 준비
 
+### Dev Account User 준비
+
 <hr>
 
 ## Role 생성
-### Dev Account ID 확인
+### Dev Account ID 및 User 확인
 ![Cap 2022-07-10 15-32-06-475](https://user-images.githubusercontent.com/46125158/178134354-547f48ce-df3a-4eae-ba46-f4a0bc632cbd.png)
 
 ### Prod Account에서 Role 생성
