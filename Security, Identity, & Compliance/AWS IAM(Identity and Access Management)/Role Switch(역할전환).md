@@ -3,7 +3,7 @@
 <br/>
 
 ## Architecture 참고
-![Image](https://user-images.githubusercontent.com/46125158/178133881-575daa14-8fb5-4981-a20e-0febd0e99fbb.png)
+![Image](https://user-images.githubusercontent.com/46125158/178145658-89f766ca-f095-4fba-b22e-afe8701ada13.png)
 
 <hr>
 
@@ -67,6 +67,7 @@
 ![Cap 2022-07-10 21-27-24-440](https://user-images.githubusercontent.com/46125158/178145193-d2dd5ac1-9a9f-4ed0-a69b-ff3015f41f28.png)
 
 ### 확인
+**Prod Account S3 목록 확인 가능**  
 ![Cap 2022-07-10 21-28-41-734](https://user-images.githubusercontent.com/46125158/178145233-304a08cc-7359-4bd7-9cb6-6b8e92cdc1f0.png)
 
 <hr>
