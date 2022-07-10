@@ -21,6 +21,7 @@
 
 ### Prod Account에서 Role 생성
 - **신뢰할 수 있는 엔터티 선택**  
+  MFA 설정을 여기선 생략했으나 설정하는 것을 권장  
   ![Cap 2022-07-10 15-35-01-609](https://user-images.githubusercontent.com/46125158/178135702-7184effd-688e-4d70-b183-2fc1496f6af8.png)
 
 - **권한 추가**  
