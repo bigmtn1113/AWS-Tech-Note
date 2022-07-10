@@ -52,5 +52,25 @@
 
 <hr>
 
+## ※ AWS Extend Switch Roles 사용
+### AWS Extend Switch Roles Chrome에 추가
+![Cap 2022-07-10 16-52-31-724](https://user-images.githubusercontent.com/46125158/178136596-cadc53a5-c684-41a2-9444-5fa3841d7157.png)  
+![Cap 2022-07-10 16-52-55-636](https://user-images.githubusercontent.com/46125158/178136600-d89cf61b-2027-47c4-b94f-6287c95e3d1a.png)  
+![Cap 2022-07-10 16-53-38-385](https://user-images.githubusercontent.com/46125158/178136605-b8f18f66-9e32-4aa7-b71b-c57e1a72d689.png)
+
+### Configuration 작성
+**AWS Extend Switch Roles 실행**  
+![Cap 2022-07-10 16-54-15-667](https://user-images.githubusercontent.com/46125158/178136639-fe7d31a2-ea92-46ef-a117-063a82448826.png)  
+![Cap 2022-07-10 16-56-01-542](https://user-images.githubusercontent.com/46125158/178136642-2d52da1c-134a-44d6-86f5-533cd0caf809.png)
+
+### Role Switch 실행
+![Cap 2022-07-10 16-56-48-458](https://user-images.githubusercontent.com/46125158/178136649-e8815c74-3088-4e10-a73a-a7b2d8d28579.png)
+
+### 확인
+![Cap 2022-07-10 16-57-22-354](https://user-images.githubusercontent.com/46125158/178136654-9821ce09-4d29-4221-9a87-1014effb8923.png)
+
+<hr>
+
 ## 참고
 - **아키텍처 참고** - https://aws.amazon.com/ko/blogs/security/aws-cloudtrail-now-tracks-cross-account-activity-to-its-origin/
+- **AWS Extend Switch Roles GitHub** - https://github.com/tilfinltd/aws-extend-switch-roles
