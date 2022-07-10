@@ -23,4 +23,4 @@
 <hr>
 
 ## 참고
-- **참고 내용** - 링크
+- **아키텍처 참고** - https://aws.amazon.com/ko/blogs/security/aws-cloudtrail-now-tracks-cross-account-activity-to-its-origin/
