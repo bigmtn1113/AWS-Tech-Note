@@ -93,4 +93,5 @@
 
 ## 참고
 - **아키텍처 참고** - https://aws.amazon.com/ko/blogs/security/aws-cloudtrail-now-tracks-cross-account-activity-to-its-origin/
+- **구성 설정이 저장되는 장소** - https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html#cli-configure-files-where
 - **AWS Extend Switch Roles GitHub** - https://github.com/tilfinltd/aws-extend-switch-roles
