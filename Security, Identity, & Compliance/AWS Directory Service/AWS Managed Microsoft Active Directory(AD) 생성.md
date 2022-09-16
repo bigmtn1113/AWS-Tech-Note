@@ -1,11 +1,11 @@
 # AWS Managed Microsoft Active Directory(AD) 생성
 
-<br/>
+<br>
 
 ## Architecture 참고
 ![image](https://user-images.githubusercontent.com/46125158/168287819-996f6ba8-7f6a-4140-8501-5cc375635ba2.png)
 
-<hr>
+<br>
 
 ## 사전 작업
 ### VPC에 Private Subnet 2개 생성
@@ -24,7 +24,7 @@
 ![Cap 2022-05-13 21-15-18-700](https://user-images.githubusercontent.com/46125158/168281137-1f951242-5537-402a-ac96-e9f3abf3eb6c.png)  
 ![Cap 2022-05-13 21-17-16-110](https://user-images.githubusercontent.com/46125158/168281601-d33a2872-e9de-4b70-9c28-e832cd0fb6a4.png)
 
-<hr>
+<br>
 
 ## 보안 그룹 확인
 ※ **사용자의 AWS Managed Microsoft AD와 통신할 수 있는 유일한 인바운드 트래픽는 로컬 VPC 및 VPC 라우팅 트래픽**  
@@ -35,7 +35,7 @@
 ![Cap 2022-05-13 21-23-57-194](https://user-images.githubusercontent.com/46125158/168283713-ff941c8e-9110-4a1b-8012-121b21d06557.png)  
 ![Cap 2022-05-13 21-24-14-809](https://user-images.githubusercontent.com/46125158/168283719-f4371a18-e7c5-4721-8c2c-2f08e793d7b2.png)
 
-<hr>
+<br>
 
 ## Network Interfaces 확인
 ![Cap 2022-05-13 21-35-16-737](https://user-images.githubusercontent.com/46125158/168284498-098edd29-2abd-44d0-8d3a-8374cdcfc1b6.png)
