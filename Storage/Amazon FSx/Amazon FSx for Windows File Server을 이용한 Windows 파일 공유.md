@@ -1,18 +1,16 @@
 # Amazon FSx for Windows File Server을 이용한 Windows 파일 공유
 
-<br/>
+<br>
 
 ## Architecture 참고
 ![image](https://user-images.githubusercontent.com/46125158/168588704-45445fb5-8e06-477e-80f2-3a263b721d09.png)
 
-<hr>
+<br>
 
 ## 사전 작업
-### Public Subnet, Private Subnet 각각 2개씩 생성
-
-### 각 Public Subnet에 EC2 Windows 인스턴스 생성
-
-### [AWS Managed Microsoft Active Directory(AD) 생성](https://github.com/kva231/AWS-Tech-Note/blob/master/Security%2C%20Identity%2C%20%26%20Compliance/AWS%20Directory%20Service/AWS%20Managed%20Microsoft%20Active%20Directory(AD)%20%EC%83%9D%EC%84%B1.md)
+- **Public Subnet, Private Subnet 각각 2개씩 생성**
+- **각 Public Subnet에 EC2 Windows 인스턴스 생성**
+- [AWS Managed Microsoft Active Directory(AD) 생성](https://github.com/bigmtn1113/AWS-Tech-Note/blob/master/Security%2C%20Identity%2C%20%26%20Compliance/AWS%20Directory%20Service/AWS%20Managed%20Microsoft%20Active%20Directory(AD)%20%EC%83%9D%EC%84%B1.md)
 
 <hr>
 
@@ -28,7 +26,7 @@
 ### 로그인
 ![Cap 2022-05-17 21-07-57-286](https://user-images.githubusercontent.com/46125158/168968967-69a6fe77-cdc3-4299-a2d6-d117cf49fadf.png)  
 
-<hr>
+<br>
 
 ## Domain Join
 ### AWS Directory Service 제공 DNS 서버 IP 확인
@@ -61,7 +59,7 @@ Microsoft Active Directory용 AWS Directory Service를 사용하면 Admins 및 A
 **재부팅**  
 ![Cap 2022-05-17 21-14-46-340](https://user-images.githubusercontent.com/46125158/168989290-c873e54e-d45d-4edb-b7c7-3363b11d5903.png)
 
-<hr>
+<br>
 
 ## Amazon FSx for Windows File Server 생성
 ### FSx에 적용할 보안 그룹 생성
@@ -76,7 +74,7 @@ Microsoft Active Directory용 AWS Directory Service를 사용하면 Admins 및 A
 ![Cap 2022-05-17 21-26-34-694](https://user-images.githubusercontent.com/46125158/169028793-11ba851c-b2d8-44bf-93f9-26cdbf09acfe.png)  
 ![Cap 2022-05-17 21-51-29-641](https://user-images.githubusercontent.com/46125158/169029028-7bad82e5-8e53-4387-b902-6463377ac7fd.png)
 
-<hr>
+<br>
 
 ## Network Drive 매핑
 ### Amazon FSx for Windows File Server DNS 이름 확인
@@ -87,7 +85,7 @@ Microsoft Active Directory용 AWS Directory Service를 사용하면 Admins 및 A
 ![Cap 2022-05-17 21-54-02-820](https://user-images.githubusercontent.com/46125158/169031608-9cdccf88-00d7-476f-8e2a-320e3a0016a1.png)  
 ![Cap 2022-05-17 21-54-29-083](https://user-images.githubusercontent.com/46125158/169031986-c468e770-3a05-4c18-9bad-a588f004be1d.png)
 
-<hr>
+<br>
 
 ## 파일 공유 테스트 및 확인
 ![Cap 2022-05-17 21-55-13-481](https://user-images.githubusercontent.com/46125158/169032469-e196e7be-f7e8-4aac-8088-29ed9af718aa.png)
