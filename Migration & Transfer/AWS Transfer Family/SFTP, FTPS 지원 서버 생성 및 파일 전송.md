@@ -1,6 +1,6 @@
 # SFTP, FTPS 지원 서버 생성 및 파일 전송
 
-<br/>
+<br>
 
 ## 사용 방식
 - 활성화 프로토콜 　 - **SFTP, FTPS**  
@@ -9,25 +9,20 @@
 - 도메인 　　　 　　 - **Amazon S3**  
 - 사용자 인증 방식　 - **SSH Key Pair, ID/PW**  
 
-<hr>
+<br>
 
 ## Architecture 참고
 ![image](https://user-images.githubusercontent.com/46125158/167399692-7dafa75b-fae2-402f-87f5-5dca58fdea47.png)
 
-<hr>
+<br>
 
 ## 사전 작업
-### [IAM, S3 Bucket, SSH Key Pair 생성](https://github.com/kva231/AWS-Tech-Note/blob/master/Migration%20%26%20Transfer/AWS%20Transfer%20Family/%EC%82%AC%EC%A0%84%20%EC%9E%91%EC%97%85.md)
-
-### [서버 및 클라이언트 인증서와 키를 생성 후, ACM 업로드](https://github.com/kva231/AWS-Tech-Note/blob/master/Security%2C%20Identity%2C%20%26%20Compliance/AWS%20Certificate%20Manager/%EC%84%9C%EB%B2%84%20%EB%B0%8F%20%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%20%EC%9D%B8%EC%A6%9D%EC%84%9C%EC%99%80%20%ED%82%A4%EB%A5%BC%20%EC%83%9D%EC%84%B1%20%ED%9B%84%2C%20ACM%20%EC%97%85%EB%A1%9C%EB%93%9C.md)
-
-### [AWS CLI 설치](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
-
-### [AWS SAM CLI 설치](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
-
-### VPC, Public Subnet, EIP 생성
-
-### Endpoint에 적용할 VPC default 보안 그룹 설정(SFTP, FTPS Ports)  
+- [IAM, S3 Bucket, SSH Key Pair 생성](https://github.com/bigmtn1113/AWS-Tech-Note/blob/master/Migration%20%26%20Transfer/AWS%20Transfer%20Family/%EC%82%AC%EC%A0%84%20%EC%9E%91%EC%97%85.md)
+- [서버 및 클라이언트 인증서와 키를 생성 후, ACM 업로드](https://github.com/bigmtn1113/AWS-Tech-Note/blob/master/Security%2C%20Identity%2C%20%26%20Compliance/AWS%20Certificate%20Manager/%EC%84%9C%EB%B2%84%20%EB%B0%8F%20%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%20%EC%9D%B8%EC%A6%9D%EC%84%9C%EC%99%80%20%ED%82%A4%EB%A5%BC%20%EC%83%9D%EC%84%B1%20%ED%9B%84%2C%20ACM%20%EC%97%85%EB%A1%9C%EB%93%9C.md)
+- [AWS CLI 설치](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+- [AWS SAM CLI 설치](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
+- **VPC, Public Subnet, EIP 생성**
+- **Endpoint에 적용할 VPC default 보안 그룹 설정(SFTP, FTPS Ports)**  
 ![Cap 2022-05-08 19-53-29-102](https://user-images.githubusercontent.com/46125158/167293042-5dd3f740-0a0d-4d7c-b1a0-87d909b2482d.png)
 
 <hr>
@@ -76,7 +71,7 @@
   ![image](https://user-images.githubusercontent.com/46125158/167287618-b590575d-9cb6-45cc-8e10-edc4a4a149ec.png)
   ![Cap 2022-05-08 21-43-41-147](https://user-images.githubusercontent.com/46125158/167296721-4bdf23bd-c8fa-453f-9c38-875ff807fd34.png)
 
-<hr>
+<br>
 
 ## 서버 생성
 ![Cap 2022-05-08 17-24-09-235](https://user-images.githubusercontent.com/46125158/167393691-f282a272-6b8d-4c78-887e-bf8b8a9d8610.png)
@@ -88,7 +83,7 @@
 ![Cap 2022-05-08 17-32-50-408](https://user-images.githubusercontent.com/46125158/167289091-17e43cb8-f214-44d1-876a-eff1daa96f43.png)
 ![Cap 2022-05-08 17-41-16-738](https://user-images.githubusercontent.com/46125158/167289092-1ae84f5a-50ee-4ffa-bc45-4accc06543a2.png)
 
-<hr>
+<br>
 
 ## AWS Secrets Manager을 이용한 사용자 추가
 ![Cap 2022-05-08 18-03-36-070](https://user-images.githubusercontent.com/46125158/167394104-03836b37-572a-45ea-95de-f80c40ae8585.png)
@@ -99,7 +94,7 @@
 ![Cap 2022-05-08 18-11-21-586](https://user-images.githubusercontent.com/46125158/167290123-3acfdc94-fb60-4a15-8058-afaad6ea0914.png)
 ![Cap 2022-05-08 19-42-37-953](https://user-images.githubusercontent.com/46125158/167292494-030dc29a-a562-4734-be6b-ecbe0e6f936a.png)
 
-<hr>
+<br>
 
 ## FileZilla를 사용하여 파일 전송
 ### Endpoint or EIP 확인
