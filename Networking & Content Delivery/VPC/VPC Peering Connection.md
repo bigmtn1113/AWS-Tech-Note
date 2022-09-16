@@ -1,17 +1,16 @@
 # VPC Peering Connection
 
-<br/>
+<br>
 
 ## Architecture 참고
 ![Image](https://user-images.githubusercontent.com/46125158/173216996-20938f3a-69b9-4ae3-98df-74a2c0a9a496.png)
 
-<hr>
+<br>
 
 ## 사전 작업
-### VPC Peering Connection할 두 VPC 생성
+- **VPC Peering Connection할 두 VPC 생성**  
 ![Cap 2022-06-11 18-18-13-168](https://user-images.githubusercontent.com/46125158/173217138-3512a457-c842-4e29-96fa-092ced644c1e.png)
-
-### Private EC2 접속을 위한 Bastion 생성
+- **Private EC2 접속을 위한 Bastion 생성**
 
 <hr>
 
@@ -28,7 +27,7 @@
 ### VPC Peering Connection 확인
 ![Cap 2022-06-12 14-44-57-121](https://user-images.githubusercontent.com/46125158/173217519-05b52170-0642-443d-b676-e54fa560edd7.png)
 
-<hr>
+<br>
 
 ## Route Tables 설정
 ### 통신할 리소스가 있는 서브넷과 연결된 Requester VPC Route table 확인
@@ -43,7 +42,7 @@
 ### 라우팅 추가
 ![Cap 2022-06-11 18-44-50-717](https://user-images.githubusercontent.com/46125158/173219059-683b13b0-8a7e-4312-b9da-cb713b8d0a8d.png)
 
-<hr>
+<br>
 
 ## VPC Peering Connection Test
 ### Ping Test를 위한 EC2 서버들 보안 그룹 인바운드 규칙 추가
