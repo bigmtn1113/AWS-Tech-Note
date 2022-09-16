@@ -1,26 +1,25 @@
 # WAF logs를 S3로 전송
 
-<br/>
+<br>
 
 ## Architecture 참고
 ![Image](https://user-images.githubusercontent.com/46125158/175768928-32fa8a3c-dae6-4e04-88fd-325a5129483e.png)
 
-<hr>
+<br>
 
 ## 사전 작업
 **※ WAF, Kinesis Data Firehose, S3 모두 동일 리전에 생성해야 함**
 
-### ALB, EC2 생성 후 연결
-![Cap 2022-06-25 17-14-32-864](https://user-images.githubusercontent.com/46125158/175768956-7e2c968f-ea5a-4bc3-974e-611681aa8c45.png)   
-![Cap 2022-06-25 17-14-57-750](https://user-images.githubusercontent.com/46125158/175768962-37c9f57e-487f-4b66-967c-1d29dbc5563f.png)
+- **ALB, EC2 생성 후 연결**  
+  ![Cap 2022-06-25 17-14-32-864](https://user-images.githubusercontent.com/46125158/175768956-7e2c968f-ea5a-4bc3-974e-611681aa8c45.png)   
+  ![Cap 2022-06-25 17-14-57-750](https://user-images.githubusercontent.com/46125158/175768962-37c9f57e-487f-4b66-967c-1d29dbc5563f.png)
+- **S3 생성**  
+  ![Cap 2022-06-25 17-15-35-495](https://user-images.githubusercontent.com/46125158/175769001-4448fa6f-f373-45bd-b888-b91d11dfb013.png)
 
-### S3 생성
-![Cap 2022-06-25 17-15-35-495](https://user-images.githubusercontent.com/46125158/175769001-4448fa6f-f373-45bd-b888-b91d11dfb013.png)
-
-### WAF 생성(ALB 연결)
-![Cap 2022-06-25 17-21-11-711](https://user-images.githubusercontent.com/46125158/175769006-40b7a1d8-ee4e-4e9e-a170-3f7f5005b23d.png)  
-![Cap 2022-06-25 17-21-29-356](https://user-images.githubusercontent.com/46125158/175769080-ba269364-3310-4a0f-a56d-e1250955cac0.png)  
-![Cap 2022-06-25 17-21-44-363](https://user-images.githubusercontent.com/46125158/175769102-d685bc92-7bbd-4a40-885b-d18114c9dd6a.png)
+- **WAF 생성(ALB 연결)**  
+  ![Cap 2022-06-25 17-21-11-711](https://user-images.githubusercontent.com/46125158/175769006-40b7a1d8-ee4e-4e9e-a170-3f7f5005b23d.png)  
+  ![Cap 2022-06-25 17-21-29-356](https://user-images.githubusercontent.com/46125158/175769080-ba269364-3310-4a0f-a56d-e1250955cac0.png)  
+  ![Cap 2022-06-25 17-21-44-363](https://user-images.githubusercontent.com/46125158/175769102-d685bc92-7bbd-4a40-885b-d18114c9dd6a.png)
 
 <hr>
 
@@ -57,7 +56,7 @@
 #### IAM Role
 ![Cap 2022-06-25 18-43-58-355](https://user-images.githubusercontent.com/46125158/175771034-a8382b34-e753-42a4-93bc-3cb062de7f2b.png)
 
-<hr>
+<br>
 
 ## 샘플 데이터를 사용하여 전송 스트림 테스트
 ### Deliverty Stream 선택 후 테스트 진행
@@ -72,7 +71,7 @@
 ![Cap 2022-06-25 22-14-00-298](https://user-images.githubusercontent.com/46125158/175775211-53c8c840-61d5-44c0-b364-062417956785.png)  
 결과 확인 후, 다시 S3 권한 추가
 
-<hr>
+<br>
 
 ## AWS WAF를 Kinesis Data Firehose와 연결
 ### WAF Web ACL 선택
