@@ -1,14 +1,14 @@
 # Amazon WorkSpaces 생성
 
-<br/>
+<br>
 
 ## Architecture 참고
 ![Image](https://user-images.githubusercontent.com/46125158/170857203-b93be72b-6854-4746-8ea4-248c125078f9.png)
 
-<hr>
+<br>
 
 ## 사전 작업
-### [AWS Managed Microsoft Active Directory(AD) 생성](https://github.com/kva231/AWS-Tech-Note/blob/master/Security%2C%20Identity%2C%20%26%20Compliance/AWS%20Directory%20Service/AWS%20Managed%20Microsoft%20Active%20Directory(AD)%20%EC%83%9D%EC%84%B1.md)
+- [AWS Managed Microsoft Active Directory(AD) 생성](https://github.com/bigmtn1113/AWS-Tech-Note/blob/master/Security%2C%20Identity%2C%20%26%20Compliance/AWS%20Directory%20Service/AWS%20Managed%20Microsoft%20Active%20Directory(AD)%20%EC%83%9D%EC%84%B1.md)
 
 <hr>
 
@@ -35,7 +35,7 @@
 ### 생성 완료
 ![Cap 2022-05-29 18-13-06-716](https://user-images.githubusercontent.com/46125158/170990189-742176b8-120f-4407-8efe-6fb402c1e4e9.png)  
 
-<hr>
+<br>
 
 ## WorkSpace 연결
 ### WorkSpace 생성할 때 지정한 사용자의 이메일 확인
