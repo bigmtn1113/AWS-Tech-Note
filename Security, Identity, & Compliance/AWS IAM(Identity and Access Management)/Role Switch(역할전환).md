@@ -1,18 +1,18 @@
 # Role Switch(역할전환)
 
-<br/>
+<br>
 
 ## Architecture 참고
 ![Image](https://user-images.githubusercontent.com/46125158/178145658-89f766ca-f095-4fba-b22e-afe8701ada13.png)
 
-<br/>
+<br>
 
 ## 사전 작업
 
 - **AWS Account 두 개(Dev. Prod) 준비**
 - **Dev Account User 준비**
 
-<br/>
+<hr/>
 
 ## Role 생성
 ### Dev Account ID 및 User 확인
@@ -29,7 +29,7 @@
 - **이름 지정, 검토 및 생성**  
   ![Cap 2022-07-10 15-37-08-355](https://user-images.githubusercontent.com/46125158/178135733-6e995af1-fa32-4e1e-9682-2762335d33a4.png)
 
-<br/>
+<br>
 
 ## Role 편집
 ### 생성한 Role 확인
@@ -38,7 +38,7 @@
 ### 생성한 Role 선택 후, 정책 편집
 ![Cap 2022-07-10 15-41-23-524](https://user-images.githubusercontent.com/46125158/178135768-d09e8b99-2263-4f41-801c-c144d5a92358.png)
 
-<br/>
+<br>
 
 ## Role Switch
 ### Dev Account user login 후, Switch role 클릭
@@ -50,7 +50,7 @@
 ### 확인
 ![Cap 2022-07-10 15-44-37-845](https://user-images.githubusercontent.com/46125158/178135821-b38dde62-366d-4b3b-9f63-6b878a48434c.png)
 
-<br/>
+<br>
 
 ## AWS CLI 이용
 ### aws configure 실행
@@ -69,7 +69,7 @@
 **Prod Account S3 목록 확인 가능**  
 ![Cap 2022-07-10 21-28-41-734](https://user-images.githubusercontent.com/46125158/178145233-304a08cc-7359-4bd7-9cb6-6b8e92cdc1f0.png)
 
-<hr>
+<br>
 
 ## ※ AWS Extend Switch Roles 사용
 ### AWS Extend Switch Roles Chrome에 추가
