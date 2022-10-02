@@ -14,7 +14,7 @@ Dev 계정의 EC2에서 Prod 계정의 S3 버킷 리스트를 조회해야 하�
 
 - **AWS 계정 두 개(Dev. Prod) 준비**
 - **Dev 계정에 EC2 생성**
-- **Dev 계정의 EC2에 jq 설치**
+- **Dev 계정의 EC2에 jq 설치** - 문자열 추출 목적
   - ```bash
     sudo yum -y install jq
     ```
