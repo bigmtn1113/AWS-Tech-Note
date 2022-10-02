@@ -107,4 +107,4 @@ Dev 계정의 EC2에서 Prod 계정의 S3 버킷 리스트 조회
 <hr>
 
 ## 참고
-- **참고** - 링크
+- **AWS CLI를 사용하여 IAM 역할 위임** - https://aws.amazon.com/ko/premiumsupport/knowledge-center/iam-assume-role-cli/
