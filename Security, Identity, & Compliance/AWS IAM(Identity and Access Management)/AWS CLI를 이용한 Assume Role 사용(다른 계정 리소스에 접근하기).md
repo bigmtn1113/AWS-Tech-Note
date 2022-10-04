@@ -64,16 +64,20 @@ Dev 계정의 EC2에 접근 후 작업 진행
 
 ### aws sts assume-role
 ```bash
-# ex) OUT=$(aws sts assume-role --role-arn "arn:aws:iam::123456789012:role/example-role" --role-session-name AWSCLI-Session)
+# <변수 명>=$(aws sts assume-role --role-arn "arn:aws:iam::<Prod 계정 ID>:role/CrossAccountRole-EC2ToS3" --role-session-name <세션 이름>)
 
-<변수 명>=$(aws sts assume-role --role-arn "arn:aws:iam::<Prod 계정 ID>:role/CrossAccountRole-EC2ToS3" --role-session-name <세션 이름>)
+OUT=$(aws sts assume-role --role-arn "arn:aws:iam::123456789012:role/example-role" --role-session-name AWSCLI-Session)
 ```
 
 ### 변수에서 AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_SESSION_TOKEN 추출
 ```bash
-AWS_ACCESS_KEY_ID=$(echo $<변수 명> | jq -r '.Credentials''.AccessKeyId')
-AWS_SECRET_ACCESS_KEY=$(echo $<변수 명> | jq -r '.Credentials''.SecretAccessKey')
-AWS_SESSION_TOKEN=$(echo $<변수 명> | jq -r '.Credentials''.SessionToken')
+# AWS_ACCESS_KEY_ID=$(echo $<변수 명> | jq -r '.Credentials''.AccessKeyId')
+# AWS_SECRET_ACCESS_KEY=$(echo $<변수 명> | jq -r '.Credentials''.SecretAccessKey')
+# AWS_SESSION_TOKEN=$(echo $<변수 명> | jq -r '.Credentials''.SessionToken')
+
+AWS_ACCESS_KEY_ID=$(echo $OUT | jq -r '.Credentials''.AccessKeyId')
+AWS_SECRET_ACCESS_KEY=$(echo $OUT | jq -r '.Credentials''.SecretAccessKey')
+AWS_SESSION_TOKEN=$(echo $OUT | jq -r '.Credentials''.SessionToken')
 ```
 
 ### Profile 설정
@@ -81,9 +85,13 @@ AWS_SESSION_TOKEN=$(echo $<변수 명> | jq -r '.Credentials''.SessionToken')
 여기선 Profile 이름을 Demo라고 지정
 
 ```bash
-aws configure set aws_access_key_id "$AWS_ACCESS_KEY_ID" --profile <Profile 이름>
-aws configure set aws_secret_access_key "$AWS_SECRET_ACCESS_KEY" --profile <Profile 이름>
-aws configure set aws_session_token "$AWS_SESSION_TOKEN" --profile <Profile 이름>
+# aws configure set aws_access_key_id "$AWS_ACCESS_KEY_ID" --profile <Profile 이름>
+# aws configure set aws_secret_access_key "$AWS_SECRET_ACCESS_KEY" --profile <Profile 이름>
+# aws configure set aws_session_token "$AWS_SESSION_TOKEN" --profile <Profile 이름>
+
+aws configure set aws_access_key_id "$AWS_ACCESS_KEY_ID" --profile Demo
+aws configure set aws_secret_access_key "$AWS_SECRET_ACCESS_KEY" --profile Demo
+aws configure set aws_session_token "$AWS_SESSION_TOKEN" --profile Demo
 ```
 
 ### 등록된 Profile 확인
@@ -95,7 +103,9 @@ cat ~/.aws/credentials
 
 ### Account, UserId, Arn 확인
 ```bash
-aws sts get-caller-identity --profile <Profile 이름>
+# aws sts get-caller-identity --profile <Profile 이름>
+
+aws sts get-caller-identity --profile Demo
 ```
 
 <br>
