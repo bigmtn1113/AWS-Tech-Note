@@ -5,6 +5,8 @@
 ## 시나리오
 Dev 계정의 EC2에서 Prod 계정의 S3 버킷 리스트를 조회해야 하는 상황
 
+<br>
+
 ## Architecture
 ![Image](https://user-images.githubusercontent.com/46125158/193773993-126ad4f3-33f5-4a8f-b99e-14ffc0373381.png)
 
