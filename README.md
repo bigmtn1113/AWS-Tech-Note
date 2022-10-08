@@ -30,8 +30,8 @@
 
 ## Security, Identity, & Compliance
 ### ⭐ AWS IAM(Identity and Access Management)
-- [Role Switch(역할전환)](https://github.com/bigmtn1113/AWS-Tech-Note/blob/master/Security%2C%20Identity%2C%20%26%20Compliance/AWS%20IAM(Identity%20and%20Access%20Management)/Role%20Switch(%EC%97%AD%ED%95%A0%EC%A0%84%ED%99%98).md) - 교차 계정 접근 + chrome 확장 프로그램 AWS Extend Switch Roles 이용
-- [AWS CLI를 이용한 Assume Role 사용(다른 계정 리소스에 접근하기)](https://github.com/bigmtn1113/AWS-Tech-Note/blob/master/Security%2C%20Identity%2C%20%26%20Compliance/AWS%20IAM(Identity%20and%20Access%20Management)/AWS%20CLI%EB%A5%BC%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20Assume%20Role%20%EC%82%AC%EC%9A%A9(%EB%8B%A4%EB%A5%B8%20%EA%B3%84%EC%A0%95%20%EB%A6%AC%EC%86%8C%EC%8A%A4%EC%97%90%20%EC%A0%91%EA%B7%BC%ED%95%98%EA%B8%B0).md)
+- [Role Switch(역할전환)](https://github.com/bigmtn1113/AWS-Tech-Note/blob/master/Security%2C%20Identity%2C%20%26%20Compliance/AWS%20IAM(Identity%20and%20Access%20Management)/Role%20Switch(%EC%97%AD%ED%95%A0%EC%A0%84%ED%99%98).md) 　　　　　　　 - 교차 계정 접근 + chrome 확장 프로그램 AWS Extend Switch Roles 이용
+- [AWS CLI를 이용한 Assume Role 사용](https://github.com/bigmtn1113/AWS-Tech-Note/blob/master/Security,%20Identity,%20&%20Compliance/AWS%20IAM(Identity%20and%20Access%20Management)/AWS%20CLI%EB%A5%BC%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20Assume%20Role%20%EC%82%AC%EC%9A%A9.md)　- 다른 계정 리소스에 접근하기
 
 ### ⭐ AWS Certificate Manager
 - [서버 및 클라이언트 인증서와 키를 생성 후, ACM 업로드](https://github.com/bigmtn1113/AWS-Tech-Note/blob/master/Security%2C%20Identity%2C%20%26%20Compliance/AWS%20Certificate%20Manager/%EC%84%9C%EB%B2%84%20%EB%B0%8F%20%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%20%EC%9D%B8%EC%A6%9D%EC%84%9C%EC%99%80%20%ED%82%A4%EB%A5%BC%20%EC%83%9D%EC%84%B1%20%ED%9B%84%2C%20ACM%20%EC%97%85%EB%A1%9C%EB%93%9C.md) - OpenVPN easy-rsa 이용
