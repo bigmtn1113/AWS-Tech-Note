@@ -1,4 +1,4 @@
-# AWS CLI를 이용한 Assume Role 사용(다른 계정 리소스에 접근하기)
+# AWS CLI를 이용한 Assume Role 사용 - 다른 계정 리소스에 접근하기
 
 <br>
 
