@@ -87,6 +87,8 @@ conn Tunnel2
   overlapip=yes
 ```
 
+※ configuration에 명시된 대로 구성이 끝나면 `sudo systemctl restart ipsec.service` 명령어 실행
+
 ### Disable Source / destination check 설정
 1. EC2 인스턴스를 선택하고 **Actions, Networking, Change source/destination check**를 선택
 2. **Source / destination checking**에서 **Stop** 선택 후, 저장
