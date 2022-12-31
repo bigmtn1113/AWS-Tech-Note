@@ -42,9 +42,69 @@ Site-to-Site VPN 연결을 위해 고객 측에 설치된 물리적 디바이스
 Virtual private gateway를 생성할 때 Amazon 측 게이트웨이의 프라이빗 Autonomous System Number(ASN) 지정 가능  
 지정하지 않는 경우 default 값은 64512
 
+<br>
+
+## Customer gateway device EC2 인스턴스 설정 시 주의사항
+### Openswan 설치
+Customer gateway device EC2 인스턴스에 접속 후 진행
+
+```bash
+$ sudo yum -y install openswan
+```
+
+### Customer gateway device에 특정한 configuration 파일대로 인스턴스 설정
+`/etc/ipsec.d/aws.conf` 파일 설정 시 주의해야 할 점
+- `auth=esp` 부분 주석 처리 혹은 삭제
+- `leftsubnet`은 온프레미스 네트워크로 설정
+  - ex) 192.168.0.0/16(ON-PREMISE)
+- `rightsubnet`은 원격 네트워크로 설정
+  - ex) 10.0.0.0/16(VPC)
+- `overlapip=yes` 옵션 추가
+  - 동일한 IP(3.38.166.49 - Customer gateway device IP)를 사용하기 위한 목적. leftid 확인
+  - 이 부분을 추가하지 않으면 Tunnel이 하나만 Up
+
+```bash
+conn Tunnel1
+	leftid=3.38.166.49
+	right=3.34.162.95
+  ...
+	#auth=esp
+	...
+	leftsubnet=192.168.0.0/16
+	rightsubnet=10.0.0.0/16
+  ...
+  overlapip=yes
+
+conn Tunnel2
+	leftid=3.38.166.49
+	right=52.78.183.110
+  ...
+	#auth=esp
+	...
+	leftsubnet=192.168.0.0/16
+	rightsubnet=10.0.0.0/16
+  ...
+  overlapip=yes
+```
+
+### Disable Source / destination check 설정
+1. EC2 인스턴스를 선택하고 **Actions, Networking, Change source/destination check**를 선택
+2. **Source / destination checking**에서 **Stop** 선택 후, 저장
+
+각 EC2 인스턴스는 기본적으로 소스/대상 확인을 수행  
+즉, 인스턴스는 전송하거나 수신하는 모든 트래픽의 소스 또는 대상  
+그러나 NAT/VPN 인스턴스는 트래픽의 소스도 대상도 아니며 트래픽의 게이트웨이 역할만 수행  
+따라서 NAT/VPN 인스턴스에서 소스/대상 확인을 비활성화로 설정하는 작업 필요
+
+비활성화하지 않으면 NAT/VPN 인스턴스 자신이 트래픽의 소스 또는 대상이 아닐 경우 트래픽을 차단
+
+### Security group 설정
+IPSec(VPN 터널링)에서 openswan은 udp 4500 포트를 NAT를 통과할 때 사용
+
 <hr>
 
 ## 참고
 - **AWS Site-to-Site VPN란?** - https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html
 - **AWS Site-to-Site VPN 작동 방식** - https://docs.aws.amazon.com/ko_kr/vpn/latest/s2svpn/how_it_works.html
 - **Site-to-Site VPN 연결의 터널 옵션** - https://docs.aws.amazon.com/vpn/latest/s2svpn/VPNTunnels.html
+- **Disable Source / destination checks** - https://docs.aws.amazon.com/vpc/latest/userguide/VPC_NAT_Instance.html#EIP_Disable_SrcDestCheck
