@@ -12,7 +12,7 @@
 
 <br>
 
-## AWS Site-to-Site VPN
+## AWS Site-to-Site VPN란?
 여기선 온프레미스 환경이 VPC로 구성되어 있지만 VPN 연결은 VPC와 자체 온프레미스 네트워크 간의 연결을 의미  
 Site-to-Site VPN은 인터넷 프로토콜 보안(IPSec) VPN 연결을 지원
 
@@ -21,8 +21,12 @@ Site-to-Site VPN은 인터넷 프로토콜 보안(IPSec) VPN 연결을 지원
 온프레미스 장비와 VPC 간의 보안 연결
 
 #### VPN tunnel
-데이터를 고객 네트워크에서 AWS와 주고받을 수 있는 암호화된 링크  
-각 VPN 연결에는 고가용성을 위해 동시에 사용할 수 있는 두 개의 VPN 터널이 존재
+데이터를 고객 네트워크에서 AWS와 주고받을 수 있는 암호화된 링크
+
+각 VPN 연결에는 고가용성을 위해 동시에 사용할 수 있는 두 개의 VPN 터널이 존재하며 각 터널은 고유의 퍼블릭 IP 주소를 사용  
+ex) 3.34.162.95, 52.78.183.110
+
+터널 하나가 사용 불가능하게 되면 네트워크 트래픽은 해당 특정 Site-to-Site VPN 연결에 사용 가능한 터널로 자동으로 라우팅
 
 #### Customer gateway
 Customer gateway device에 대한 정보를 AWS에 제공하는 AWS 리소스  
@@ -35,7 +39,12 @@ Site-to-Site VPN 연결을 위해 고객 측에 설치된 물리적 디바이스
 #### Virtual private gateway
 단일 VPC에 연결할 수 있는 Site-to-Site VPN 연결의 Amazon 측 VPN 엔드포인트
 
+Virtual private gateway를 생성할 때 Amazon 측 게이트웨이의 프라이빗 Autonomous System Number(ASN) 지정 가능  
+지정하지 않는 경우 default 값은 64512
+
 <hr>
 
 ## 참고
 - **AWS Site-to-Site VPN란?** - https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html
+- **AWS Site-to-Site VPN 작동 방식** - https://docs.aws.amazon.com/ko_kr/vpn/latest/s2svpn/how_it_works.html
+- **Site-to-Site VPN 연결의 터널 옵션** - https://docs.aws.amazon.com/vpn/latest/s2svpn/VPNTunnels.html
