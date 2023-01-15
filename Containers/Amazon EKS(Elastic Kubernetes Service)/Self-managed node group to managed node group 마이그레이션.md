@@ -152,6 +152,9 @@ pod/nginx-deployment-9456bbbf9-5n2ft evicted
 node/ip-172-31-35-91.ap-northeast-2.compute.internal evicted
 ```
 
+※ `--ignore-daemonsets`  
+Daemonsets으로 실행된 pods는 삭제해도 daemonsets이 즉시 다시 실행하므로 무시하는 옵션을 주고 진행
+
 #### Nodes 확인
 Self-managed nodes의 STATUS에 `SchedulingDisabled` 표시가 생성된 것 확인 가능
 
