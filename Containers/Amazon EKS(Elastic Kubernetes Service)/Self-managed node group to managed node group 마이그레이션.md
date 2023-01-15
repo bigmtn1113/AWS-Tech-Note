@@ -10,7 +10,7 @@ Self-managed nodes에서 구동 중인 pods를 Managed nodes로 마이그레이�
 ## 테스트 환경 구축
 ### EKS cluster 생성
 ```bash
-eksctl create cluster \
+$ eksctl create cluster \
   --name my-cluster \
   --region ap-northeast-2 \
   --version 1.23 \
@@ -20,7 +20,7 @@ eksctl create cluster \
 
 ### EKS self-managed node group 생성
 ```bash
-eksctl create nodegroup \
+$ eksctl create nodegroup \
   --cluster my-cluster \
   --name al-nodes \
   --node-type t3.small \
@@ -34,14 +34,14 @@ eksctl create nodegroup \
 
 ### Sample application 생성
 ```bash
-kubectl apply -f https://k8s.io/examples/controllers/nginx-deployment.yaml
+$ kubectl apply -f https://k8s.io/examples/controllers/nginx-deployment.yaml
 ```
 
-### 확인
-nodes, deployments, replicasets, pods 확인
+### 리소스 확인
+nodes, daemonsets, deployments, replicasets, pods 확인
 
 ```bash
-kubectl get nodes,deploy,rs,pods -A
+$ kubectl get nodes,ds,deploy,rs,pods -A
 ```
 
 <br>
@@ -49,7 +49,7 @@ kubectl get nodes,deploy,rs,pods -A
 ## 절차
 ### 1. 관리형 노드 그룹 생성
 ```bash
-eksctl create nodegroup \
+$ eksctl create nodegroup \
   --cluster my-cluster \
   --region ap-northeast-2 \
   --name my-mng \
@@ -62,12 +62,33 @@ eksctl create nodegroup \
   --ssh-public-key bigmtn
 ```
 
+#### 리소스 확인
+```bash
+$ kubectl get nodes,ds,deploy,rs,pods -A
+```
+
 ### 2. Self-managed node group의 모든 node를 "NoSchedule"로 오염
 EKS scheduler가 Self-managed nodes에 새 pods를 스케줄링하지 않도록 지시
 
 Self-managed nodes는 node group의 이름을 label로 갖고 있으므로 모든 self-managed nodes에 taint를 적용하려면 다음 명령을 사용  
 ```bash
-kubectl taint node -l "alpha.eksctl.io/nodegroup-name"="<<SELF-MANAGED-NODE-GROUP-NAME>>" key=value:NoSchedule
+# kubectl taint node -l "alpha.eksctl.io/nodegroup-name"="<<SELF-MANAGED-NODE-GROUP-NAME>>" key=value:NoSchedule
+$ kubectl taint node -l "alpha.eksctl.io/nodegroup-name"="al-nodes" key=value:NoSchedule
+
+node/ip-172-31-0-51.ap-northeast-2.compute.internal tainted
+node/ip-172-31-30-138.ap-northeast-2.compute.internal tainted
+node/ip-172-31-35-91.ap-northeast-2.compute.internal tainted
+```
+
+#### Tainted nodes 확인
+tainted 되었는지 `kubectl describe` 명령어로 확인
+
+```bash
+$ kubectl describe node/ip-172-31-0-51.ap-northeast-2.compute.internal | grep Taints
+$ kubectl describe node/ip-172-31-30-138.ap-northeast-2.compute.internal | grep Taints
+$ kubectl describe node/ip-172-31-35-91.ap-northeast-2.compute.internal | grep Taints
+
+Taints:             key=value:NoSchedule
 ```
 
 ### 3. Application deployments scale-out
@@ -77,43 +98,94 @@ Self-managed nodes는 taint되었으므로 replicas 수가 증가하면 새 pods
 프로덕션 애플리케이션의 경우 replicas 수를 100% 늘리는 것을 권장
 
 ```bash
-kubectl scale deployments/<<DEPLOYMENT-NAME>> --replicas=4
+# kubectl scale deployments/<<DEPLOYMENT-NAME>> --replicas=6
+$ kubectl scale deployments/nginx-deployment --replicas=6
 ```
 
 ### 4. kube-system의 deployments scale-out
-이 설정에서는 두 가지 deployments를 안내
-- core-dns
-- aws=load-balancer-controller
+현재 kube-system에 code-dns만 있으므로 code-dns만 진행
 
 Application pods 수를 늘리는 것처럼 동일한 방식으로 진행  
-초기 설정에는 두 개의 복제본 존재
+초기 설정에는 두 개의 복제본만 존재하므로 replicas 값은 4
 
 ```bash
-kubectl scale deployments/coredns --replicas=4 -n kube-system
-kubectl scale deployments/aws-load-balancer-controller --replicas=4 -n kube-system
+$ kubectl scale deployments/coredns --replicas=4 -n kube-system
 ```
 
 ### 5. 새 pods들 확인
 Application pods와 kube-system 관련 pods들이 정상적으로 실행 중인지 확인
 
 ```bash
-kubectl get replicasets -A
+$ kubectl get replicasets -A
 ```
 
-### 6. Self-managed nodes를 비우고 self-managed node group 삭제
+### 6. Self-managed nodes 
+```bash
+# kubectl drain -l "alpha.eksctl.io/nodegroup-name"="<<SELF-MANAGED-NODE-GROUP-NAME>>" --ignore-daemonsets --delete-emptydir-data
+$ kubectl drain -l "alpha.eksctl.io/nodegroup-name"="al-nodes" --ignore-daemonsets --delete-emptydir-data
 
+node/ip-172-31-0-51.ap-northeast-2.compute.internal cordoned
+node/ip-172-31-30-138.ap-northeast-2.compute.internal cordoned
+node/ip-172-31-35-91.ap-northeast-2.compute.internal cordoned
+WARNING: ignoring DaemonSet-managed Pods: kube-system/aws-node-txlkg, kube-system/kube-proxy-q9mdk
+evicting pod default/nginx-deployment-9456bbbf9-mxtsh
+evicting pod kube-system/coredns-d596d9655-2xb27
+evicting pod kube-system/coredns-d596d9655-6nd2w
+pod/coredns-d596d9655-2xb27 evicted
+pod/nginx-deployment-9456bbbf9-mxtsh evicted
+pod/coredns-d596d9655-6nd2w evicted
+node/ip-172-31-0-51.ap-northeast-2.compute.internal evicted
+WARNING: ignoring DaemonSet-managed Pods: kube-system/aws-node-th7wf, kube-system/kube-proxy-qm9gm
+evicting pod default/nginx-deployment-9456bbbf9-x4ftz
+pod/nginx-deployment-9456bbbf9-x4ftz evicted
+node/ip-172-31-30-138.ap-northeast-2.compute.internal evicted
+WARNING: ignoring DaemonSet-managed Pods: kube-system/aws-node-tmp5l, kube-system/kube-proxy-gbg6p
+evicting pod default/nginx-deployment-9456bbbf9-5n2ft
+pod/nginx-deployment-9456bbbf9-5n2ft evicted
+node/ip-172-31-35-91.ap-northeast-2.compute.internal evicted
+```
+
+#### Nodes 및 pods 확인
+Nodes의 STATUS에 SchedulingDisabled 표시가 생성된 것 확인 가능
 
 ```bash
-kubectl drain =l "alpha.eksctl.io/nodegroup-name"="<<SELF-MANAGED-NODE-GROUP-NAME>>" --ignore-daemonsets --delete-emptydir-data
+$ kubectl get nodes
+
+NAME                                               STATUS                     ROLES    AGE   VERSION
+ip-172-31-0-51.ap-northeast-2.compute.internal     Ready,SchedulingDisabled   <none>   73m   v1.23.13-eks-fb459a0
+ip-172-31-20-1.ap-northeast-2.compute.internal     Ready                      <none>   43m   v1.23.13-eks-fb459a0
+ip-172-31-30-138.ap-northeast-2.compute.internal   Ready,SchedulingDisabled   <none>   73m   v1.23.13-eks-fb459a0
+ip-172-31-35-91.ap-northeast-2.compute.internal    Ready,SchedulingDisabled   <none>   73m   v1.23.13-eks-fb459a0
+ip-172-31-4-153.ap-northeast-2.compute.internal    Ready                      <none>   43m   v1.23.13-eks-fb459a0
+ip-172-31-47-67.ap-northeast-2.compute.internal    Ready                      <none>   43m   v1.23.13-eks-fb459a0
 ```
 
-### 7. deployments scale-in
+`kubectl drain` 명령어로 인해 self-managed nodes에 있던 nginx-deployment와 coredns의 pods가 제거되고 managed nodes에서 새롭게 생성된 것 확인 가능
+
+```bash
+$ kubectl get pods -A -o wide
+```
+
+### 7. Self-managed node group 제거
+```bash
+$ eksctl delete nodegroup \
+  --cluster my-cluster \
+  --region ap-northeast-2 \
+  --name al-nodes
+```
+
+### 8. deployments scale-in
 필요에 맞게 replicas 값 축소
 
 ```bash
-kubectl scale deployments/<<DEPLOYMENT-NAME>> --replicas=2
-kubectl scale deployments/coredns --replicas=2 -n kube-system
-kubectl scale deployments/aws-load-balancer-controller --replicas=2 -n kube-system
+# kubectl scale deployments/<<DEPLOYMENT-NAME>> --replicas=2
+$ kubectl scale deployments/nginx-deployment --replicas=3
+$ kubectl scale deployments/coredns --replicas=2 -n kube-system
+```
+
+#### 리소스 확인
+```bash
+$ kubectl get nodes,ds,deploy,rs,pods -A
 ```
 
 <hr>
