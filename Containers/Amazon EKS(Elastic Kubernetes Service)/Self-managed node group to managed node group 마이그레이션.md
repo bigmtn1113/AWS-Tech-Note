@@ -3,7 +3,7 @@
 <br>
 
 ## 시나리오
-Self-managed nodes에서 구동 중인 pods를 Managed nodes로 마이그레이션  
+Self-managed nodes에서 구동 중인 pods를 Managed nodes로 마이그레이션
 
 <br>
 
