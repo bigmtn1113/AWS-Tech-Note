@@ -102,6 +102,13 @@ Self-managed nodes는 taint되었으므로 replicas 수가 증가하면 새 pods
 $ kubectl scale deployments/nginx-deployment --replicas=6
 ```
 
+#### Pods 확인
+새 pods가 managed nodes에 배포된 것 확인 가능
+
+```bash
+$ kubectl get pods -o wide
+```
+
 ### 4. kube-system의 deployments scale-out
 현재 kube-system에 code-dns만 있으므로 code-dns만 진행
 
@@ -119,7 +126,7 @@ Application pods와 kube-system 관련 pods들이 정상적으로 실행 중인�
 $ kubectl get replicasets -A
 ```
 
-### 6. Self-managed nodes 
+### 6. Self-managed nodes 비우기
 ```bash
 # kubectl drain -l "alpha.eksctl.io/nodegroup-name"="<<SELF-MANAGED-NODE-GROUP-NAME>>" --ignore-daemonsets --delete-emptydir-data
 $ kubectl drain -l "alpha.eksctl.io/nodegroup-name"="al-nodes" --ignore-daemonsets --delete-emptydir-data
@@ -145,8 +152,8 @@ pod/nginx-deployment-9456bbbf9-5n2ft evicted
 node/ip-172-31-35-91.ap-northeast-2.compute.internal evicted
 ```
 
-#### Nodes 및 pods 확인
-Nodes의 STATUS에 SchedulingDisabled 표시가 생성된 것 확인 가능
+#### Nodes 확인
+Self-managed nodes의 STATUS에 `SchedulingDisabled` 표시가 생성된 것 확인 가능
 
 ```bash
 $ kubectl get nodes
@@ -160,6 +167,7 @@ ip-172-31-4-153.ap-northeast-2.compute.internal    Ready                      <n
 ip-172-31-47-67.ap-northeast-2.compute.internal    Ready                      <none>   43m   v1.23.13-eks-fb459a0
 ```
 
+#### Pods 확인
 `kubectl drain` 명령어로 인해 self-managed nodes에 있던 nginx-deployment와 coredns의 pods가 제거되고 managed nodes에서 새롭게 생성된 것 확인 가능
 
 ```bash
@@ -178,12 +186,14 @@ $ eksctl delete nodegroup \
 필요에 맞게 replicas 값 축소
 
 ```bash
-# kubectl scale deployments/<<DEPLOYMENT-NAME>> --replicas=2
+# kubectl scale deployments/<<DEPLOYMENT-NAME>> --replicas=3
 $ kubectl scale deployments/nginx-deployment --replicas=3
 $ kubectl scale deployments/coredns --replicas=2 -n kube-system
 ```
 
 #### 리소스 확인
+nodes, daemonsets, deployments, replicasets, pods 확인
+
 ```bash
 $ kubectl get nodes,ds,deploy,rs,pods -A
 ```
