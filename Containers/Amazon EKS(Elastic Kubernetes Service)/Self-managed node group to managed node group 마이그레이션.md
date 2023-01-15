@@ -7,8 +7,59 @@ Self-managed nodes에서 구동 중인 pods를 Managed nodes로 마이그레이�
 
 <br>
 
+## 테스트 환경 구축
+### EKS cluster 생성
+```bash
+eksctl create cluster \
+  --name my-cluster \
+  --region ap-northeast-2 \
+  --version 1.23 \
+  --vpc-public-subnets subnet-053d96d87e10981ff,subnet-0219235848224a0b1,subnet-067ce4c7b310680ba \
+  --without-nodegroup
+```
+
+### EKS self-managed node group 생성
+```bash
+eksctl create nodegroup \
+  --cluster my-cluster \
+  --name al-nodes \
+  --node-type t3.small \
+  --nodes 3 \
+  --nodes-min 1 \
+  --nodes-max 4 \
+  --ssh-access \
+  --managed=false \
+  --ssh-public-key bigmtn
+```
+
+### Sample application 생성
+```bash
+kubectl apply -f https://k8s.io/examples/controllers/nginx-deployment.yaml
+```
+
+### 확인
+nodes, deployments, replicasets, pods 확인
+
+```bash
+kubectl get nodes,deploy,rs,pods -A
+```
+
+<br>
+
 ## 절차
 ### 1. 관리형 노드 그룹 생성
+```bash
+eksctl create nodegroup \
+  --cluster my-cluster \
+  --region ap-northeast-2 \
+  --name my-mng \
+  --node-type t3.small \
+  --nodes 3 \
+  --nodes-min 2 \
+  --nodes-max 4 \
+  --ssh-access \
+  --ssh-public-key bigmtn
+```
 
 ### 2. Self-managed node group의 모든 node를 "NoSchedule"로 오염
 EKS scheduler가 Self-managed nodes에 새 pods를 스케줄링하지 않도록 지시
