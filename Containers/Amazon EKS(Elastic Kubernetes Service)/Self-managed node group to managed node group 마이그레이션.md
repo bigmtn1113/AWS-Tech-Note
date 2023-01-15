@@ -120,3 +120,7 @@ kubectl scale deployments/aws-load-balancer-controller --replicas=2 -n kube-syst
 
 ## 참고
 - **Self-managed node group to managed node group 마이그레이션** - https://aws.amazon.com/ko/blogs/containers/seamlessly-migrate-workloads-from-eks-self-managed-node-group-to-eks-managed-node-groups/
+- **Amazon EKS cluster 생성** - https://docs.aws.amazon.com/eks/latest/userguide/create-cluster.html
+- **Self-managed Amazon Linux nodes 생성** - https://docs.aws.amazon.com/eks/latest/userguide/launch-workers.html
+- **Deployments 생성** - https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#creating-a-deployment
+- **Managed node group 생성** - https://docs.aws.amazon.com/eks/latest/userguide/launch-workers.html
