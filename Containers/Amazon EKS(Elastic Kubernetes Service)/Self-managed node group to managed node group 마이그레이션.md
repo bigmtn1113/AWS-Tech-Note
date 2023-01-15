@@ -53,6 +53,7 @@ eksctl create nodegroup \
   --cluster my-cluster \
   --region ap-northeast-2 \
   --name my-mng \
+  --node-ami-family AmazonLinux2 \
   --node-type t3.small \
   --nodes 3 \
   --nodes-min 2 \
