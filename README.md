@@ -22,7 +22,7 @@
 
 ## Management & Governance
 ### ⭐ CloudWatch
-- []()
+- [Container Insights로 application 상태 파악](https://github.com/bigmtn1113/AWS-Tech-Note/blob/master/Management%20%26%20Governance/Container%20Insights%EB%A1%9C%20application%20%EC%83%81%ED%83%9C%20%ED%8C%8C%EC%95%85.md)
 
 <br/>
 
